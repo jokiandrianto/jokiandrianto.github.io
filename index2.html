@@ -1,0 +1,2126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Hasil Gabut</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- SKILL CSS -->
+    <!-- <link rel="stylesheet" href="css/skill.css"> -->
+
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/boxicons/boxicons.min.css">
+
+    <!--aos-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="css/dataaos/aos.css">
+
+
+    <!--css-->
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+</head>
+
+
+
+<style>
+    /*=== variables css===*/
+    :root {
+        --header-height: 3rem;
+
+        /*=== COLORS===*/
+        --first-color: #3E0E12;
+        --first-color-dark: #2F0A0D;
+        --text-color: #524748;
+        --first-color-light: #7b6f71;
+        --first-color-lighten: #fbf9f9;
+
+
+        /*=== FONT AND TYPOGRAPHY===*/
+        --body-font: 'poppins', sans-serif;
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+
+        /*=== FONT WEIGHT ===*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+
+        /*=== margenes===*/
+        --mb-1: .5rem;
+        --mb-2: 1rem;
+        --mb-3: 1.5rem;
+        --mb-4: 2rem;
+        --mb-5: 2.5rem;
+        --mb-6: 3rem;
+
+        /*=== z index ===*/
+        --z-normal: 1;
+        --z-tooltip: 10;
+        --z-fixed: 100;
+    }
+
+    @media screen and (min-width: 768px) {
+        :root {
+            --biggest-font-size: 4.5rem;
+            --h1-font-size: 2.25rem;
+            --h2-font-size: 1.5rem;
+            --h3-font-size: 1.25rem;
+            --normal-font-size: 1rem;
+            --small-font-size: .875rem;
+            --smaller-font-size: .813rem;
+        }
+    }
+
+    /*===base====*/
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: var(--header-height) 0 0 0;
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        margin: 0;
+    }
+
+    .nav__menu ul {
+        margin: 0;
+    }
+
+    h2,
+    h3 {
+        color: black;
+    }
+
+    .nav__list li {
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* gambar */
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        color: #000;
+    }
+
+
+
+    /*=== class css ====*/
+    .section {
+        padding: 4rem 0 2rem;
+    }
+
+    .section-title,
+    .section-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: var(--h1-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-3);
+    }
+
+    .section-subtitle {
+        display: block;
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-semi-bold);
+    }
+
+    /*===layout====*/
+    .bd-container {
+        max-width: 1024px;
+        width: calc(100% - 2rem);
+        margin-left: var(--mb-2);
+        margin-right: var(--mb-2);
+    }
+
+    .bd-grid {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .bd-card {
+        box-shadow: 0px 3px 10px 0px rgb(109, 108, 108);
+        ;
+    }
+
+    .bd-font {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+
+    .header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: rgb(0, 0, 0);
+    }
+
+    /*=== NAV ====*/
+    .nav {
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .figure-img a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: opacity 0.3s;
+        list-style: unset;
+        transition: 0.5s;
+        color: white;
+
+    }
+
+    .figure-img:hover a {
+        opacity: 1;
+    }
+
+    /*  */
+    .galeri_produk {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+
+    .gambar_besar:hover {
+        border-left: 4px solid black;
+        cursor: pointer;
+        border-radius: 15px 0 15px 15px;
+    }
+
+
+    .foto_produk_container a:hover {
+        text-decoration: none;
+    }
+
+    .gambar_kecil:hover {
+        border: 2px solid black;
+        cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fade {
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+
+    .active_gambar {
+        opacity: 0.5;
+        border: 2px solid black;
+    }
+
+    .nav .active {
+        text-decoration: underline;
+    }
+
+    .nav_kategori:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        opacity: unset;
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav__menu {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            padding-top: 1.5rem;
+            text-align: center;
+            background-color: #000;
+            transition: .4s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+            border-radius: 0 0 1rem 1rem;
+        }
+    }
+
+    .nav__item {
+        margin-bottom: var(--mb-3);
+    }
+
+    .nav__link {
+        color: var(--first-color-lighten);
+        transition: .3s;
+    }
+
+    .nav__link:hover {
+        color: var(--first-color-light);
+    }
+
+    .nav__logo,
+    .nav__toggle {
+        color: var(--first-color-lighten);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .nav__toggle {
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    /*=== show menu ====*/
+    .show-menu {
+        top: var(--header-height);
+    }
+
+    /*=== Active Menu ===*/
+
+
+    /*=== home ====*/
+    .home {
+        /* background-image: url(../bg_home.png); */
+        /* background-color: rgb(72, 232, 253); */
+        overflow: hidden;
+    }
+
+    .home__container {
+        position: relative;
+        height: calc(100vh - var(--header-height));
+        grid-template-rows: repeat(2, max-content);
+        align-content: space-around;
+        row-gap: 2rem;
+    }
+
+    .home__data {
+        border-left: 5px solid;
+        /* color: #000; */
+        color: white;
+        padding-left: 1.5rem;
+        z-index: var(--z-tooltip);
+    }
+
+    .home__name {
+        /* font-size: var(--biggest-font-size); */
+        /* color: #000; */
+        color: white;
+        font-size: 33px;
+        -webkit-text-stroke: 1px black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .home__greeting,
+    .home__profession {
+        display: block;
+        font-weight: var(--font-bold);
+    }
+
+    .home__greeting {
+        /* font-size: .913rem; */
+        font-size: 20px;
+        -webkit-text-stroke: 0.5px black;
+        /* color: #000; */
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .home__profession {
+        /* font-size: .938rem; */
+        font-size: 15px;
+        margin-bottom: var(--mb-3);
+        /* color: #000; */
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .home__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .home__img img {
+        width: 240px;
+        margin-bottom: 50px;
+    }
+
+    .home__social {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home__social-icon {
+        width: max-content;
+        font-size: 2rem;
+        margin-bottom: var(--mb-2);
+        color: rgb(255, 255, 255);
+    }
+
+    .home__social-icon:hover {
+        background: #fff;
+        border-radius: 50px;
+        box-shadow:
+            0 0 10px rgb(255, 255, 255, 1),
+            0 0 10px rgb(255, 255, 255, 1),
+            0 0 10px rgb(255, 255, 255, 1),
+            0 0 0 75px rgb(255, 255, 255, 0.05),
+            0 0 0 60px rgb(255, 255, 255, 0.05),
+            0 0 0 45px rgb(255, 255, 255, 0.05),
+            0 0 0 30px rgb(255, 255, 255, 0.05),
+            0 0 0 15px rgb(255, 255, 255, 0.05);
+    }
+
+    .home__social-icon-footer {
+        width: max-content;
+        font-size: 2rem;
+        margin-bottom: var(--mb-2);
+        color: rgb(255, 255, 255);
+    }
+
+    .home__social-icon-footer:hover {
+        background: rgb(154, 226, 255);
+        border-radius: 50px;
+        box-shadow:
+            0 0 10px rgb(255, 255, 255, 1),
+            0 0 10px rgb(255, 255, 255, 1),
+            0 0 0 45px rgb(255, 255, 255, 0.05),
+            0 0 0 30px rgb(255, 255, 255, 0.05),
+            0 0 0 15px rgb(255, 255, 255, 0.05);
+    }
+
+    /*=== buttons ====*/
+    .button {
+        display: inline-block;
+        background-color: var(--first-color);
+        /* color: var(--first-color-lighten); */
+        color: black;
+        border-style: solid;
+        border-color: black;
+        font-weight: 600;
+        padding: .75rem 1rem;
+        border-radius: .25rem;
+        transition: .3s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .button:hover {
+        /* background-color: var(--first-color-dark); */
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 40px;
+        font-style: italic;
+    }
+
+    .btn-kirim:hover {
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+        text-decoration: underline;
+    }
+
+    .button-light {
+        background-color: rgb(72, 232, 253);
+        border-radius: 20px;
+    }
+
+    /*  */
+    .button_sertifikat {
+        font-size: 12px;
+        transition: 0.5s;
+    }
+
+    .button_sertifikat:hover {
+        border-radius: 20px;
+        color: white;
+        background-color: black;
+        text-decoration: underline;
+    }
+
+    /* gambar */
+    .gambar_h_about {
+        width: 200px;
+        height: 150px;
+    }
+
+    /*  */
+    .font__basic {
+        font-size: 10px;
+    }
+
+    .font__skill {
+        font-size: 10px;
+        color: white;
+    }
+
+    .font__skill_2 {
+        margin-top: 7px;
+        font-size: 10px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .achievement_tab {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        color: black;
+        transition: 1s;
+    }
+
+    .achievement_tab:hover {
+        background-color: white;
+        text-decoration: underline;
+
+    }
+
+    .figure-img {
+        position: relative;
+    }
+
+    .kosong {
+        width: 150px;
+        height: 150px;
+        background-color: black;
+    }
+
+    .text_yt_t {
+        text-align: center;
+        padding-top: 70px;
+        font-size: 15px;
+    }
+
+    .title_yt {
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        font-weight: bold;
+    }
+
+    .vidio_karya {
+        margin: 0 auto;
+        display: block;
+        height: 200px;
+        width: 300px;
+        border: 5px solid black;
+        border-radius: 10px;
+    }
+
+    .nav_kategori {
+        transition: 1s;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        font-family: serif;
+    }
+
+    .nav .active {
+        text-decoration: underline;
+        font-size: 16px;
+    }
+
+    .gambar_besar {
+        height: 200px;
+        width: 300px;
+        border: 3px solid black;
+    }
+
+    .foto_produk_container {
+        background-color: white;
+        box-shadow: 0 10px 15px black;
+        width: 260px;
+        padding: 8px;
+        margin: auto;
+        transform: translateY(-50px);
+    }
+
+
+
+    /*====media queries ====*/
+    @media screen and (min-width: 576px) {
+        .home__img img {
+            width: 330px;
+        }
+
+        .vidio_karya {
+            margin: 0 auto;
+            display: block;
+            height: 100px;
+            width: 150px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            margin: 0;
+        }
+
+        /*  */
+        .gambar_besar {
+            height: 400px;
+            width: 450px;
+            border: 3px solid black;
+        }
+
+        .foto_produk_container {
+            background-color: white;
+            box-shadow: 0 10px 15px black;
+            width: 360px;
+            padding: 8px;
+            margin: auto;
+            transform: translateY(-50px);
+        }
+
+        /*  */
+
+
+        /*  */
+        .figure-img {
+            position: relative;
+        }
+
+        .nav-item .active {
+            text-decoration: underline !important;
+            opacity: unset;
+        }
+
+        .nav_kategori {
+            transition: 1s;
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            font-family: serif;
+        }
+
+        /*  */
+
+        .kosong {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+        }
+
+        .vidio_karya {
+            height: 200px;
+            width: 300px;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .text_yt_t {
+            text-align: center;
+            padding-top: 70px;
+            font-size: 20px;
+        }
+
+        .title_yt {
+            font-size: 20px;
+            color: black;
+            font-family: serif;
+            font-weight: bold;
+        }
+
+
+        .achievement_tab {
+            font-size: 30px;
+        }
+
+        .section {
+            padding-top: 6rem;
+        }
+
+        .section-title {
+            margin-bottom: var(--mb-5);
+        }
+
+        .nav {
+            height: calc(var(--header-height) + 1.5rem);
+        }
+
+        .nav__list {
+            display: flex;
+        }
+
+        .nav__item {
+            margin-left: var(--mb-5);
+            margin-bottom: 0;
+        }
+
+        .nav__toggle {
+            display: none;
+        }
+
+        .home__name {
+            font-size: 80px;
+            -webkit-text-stroke: 2px black;
+        }
+
+        .home__container {
+            height: 100vh;
+            grid-template-rows: max-content .5fr;
+            align-content: flex-end;
+        }
+
+        .home__greeting {
+            /* font-size: 1.25rem; */
+            font-size: 30px;
+            -webkit-text-stroke: 1px black;
+        }
+
+        .home__profession {
+            /* font-size: 2rem; */
+            font-size: 30px;
+            color: white;
+            -webkit-text-stroke: 2px black;
+        }
+
+        .home__social {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .home__social-icon {
+            margin-right: var(--mb-4);
+            margin-bottom: 0;
+        }
+
+        .home__img img {
+            width: 340px;
+            margin-bottom: 50px;
+        }
+
+        .button_sertifikat {
+            font-size: 15px;
+        }
+
+        .button_sertifikat:hover {
+            border-radius: 30px;
+            color: white;
+            background-color: black;
+            font-style: italic;
+        }
+
+        .gambar_h_about {
+            width: 300px;
+            height: 250px;
+            padding-bottom: 10px;
+        }
+
+        .font__basic {
+            font-size: 20px;
+        }
+
+        .font__skill {
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 0.2px black;
+        }
+
+        .font__skill_2 {
+            margin-top: unset;
+            font-size: 20px;
+            color: white;
+            -webkit-text-stroke: 0.2px black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+    }
+
+
+
+    /*=== about===*/
+    .about {
+        margin-top: 50px;
+    }
+
+
+    /*===Footer===*/
+    .footer {
+        background-color: rgb(0, 0, 0);
+        width: auto;
+        height: 150px;
+    }
+
+    /*===garis===*/
+    .about hr,
+    .skill hr,
+    .education hr,
+    .achievement hr,
+    .contact hr,
+    .hobi hr,
+    .karya hr,
+    .youtube hr {
+        width: 300px;
+        border-top: 3px solid #999;
+    }
+
+
+    section.about,
+    .education,
+    .skill,
+    .achievement,
+    .contact {
+        padding-top: 5rem;
+    }
+
+    /* skill .css */
+    .main-skill {
+        background-image: url(../h_skill.png);
+        padding: 4% 0;
+        border-radius: 5px;
+    }
+
+    .main-skill h5 {
+        color: rgb(0, 0, 0);
+    }
+
+    /*  */
+    .progress {
+
+        border: 2px solid rgb(0, 0, 0);
+        margin: 1% 0;
+        height: 17px;
+    }
+
+    .progress-bar {
+        background-color: rgb(240, 220, 107);
+        color: rgb(0, 0, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    /*  */
+
+
+    .progress-bar-office {
+        background-color: rgb(72, 232, 253);
+        color: black;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+
+    h2 {
+        margin: 10px;
+        text-align: center;
+    }
+</style>
+
+<!-- <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"> -->
+
+<body>
+
+
+
+
+
+
+
+    <!--header-->
+    <header class="header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo"><b>Joki Andrianto</b></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link"><i class='bx bx-info-circle'></i>About</a>
+                    </li>
+                    <li class="nav__item"><a href="#skill" class="nav__link"><i class='bx bxs-book-alt'></i>Skills</a>
+                    </li>
+                    <li class="nav__item"><a href="#education" class="nav__link"><i
+                                class='bx bxs-school'></i>Education</a></li>
+                    <li class="nav__item"><a href="#achievement" class="nav__link"><i
+                                class='bx bx-book-reader'></i>Achievement</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"><i class='bx bxs-contact'></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+
+
+        <section class="home" id="home" style="background-image: url(img/bg_home.png);">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data" style="color: white;">
+                    <span class="home__greeting">Hello, My name is</span>
+                    <h1 class="home__name">Joki Andrianto</h1>
+                    <span class="home__profession"><span class="efek-ngetik"></span></span>
+                    <a href="#contact" class="button button-light">Send
+                        Message</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="#" title="Follow me on Facebook" class="home__social-icon "><i
+                            class='bx bxl-facebook-square'></i></a>
+                    <a href="https://www.instagram.com/joky_anryanto/" title="Follow me on Instagram"
+                        class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="#youtube" title="Subscribe to my youtube channel" class="home__social-icon">
+                        <i class='bx bxl-youtube'></i></a>
+                    <a href="#" title="Follow me on Twitter" class="home__social-icon"><i
+                            class='bx bxl-twitter'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="img/joki.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--About-->
+    <section id="about" class="about bg-light p-3">
+        <div class="container bd-card " data-aos="fade-up">
+            <div class="row justify-content-center mb-3 pt-4">
+                <div class="col">
+                    <h2 class="bd-font" data-aos="fade-up"><b><i class='bx bx-info-circle'></i>About</b></h2>
+                    <hr>
+                    <p class="text-center">
+                        <marquee style="width: 250px; font-family: monospace;font-size: 20px;"> Hello! Welcome to my
+                            simple web
+                        </marquee>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p style="font-family: monospace;">
+                        I am someone who is very interested in the world of IT, therefore I am very happy to be able to
+                        implement
+                        and share what I already know and learn that I don't know yet. and currently I'm still learning
+                        basic
+                        programming languages such as web development, etc. I studied programming language in college
+                        because I
+                        majored in computer informatics and at home I studied through YouTube and books.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-3 mb-2">
+                    <h4 class="bd-font" data-aos="fade-up">Basic Informations</h4>
+                </div>
+            </div>
+            <div class="row"
+                style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                <div class="col-2">
+                    <ul class="font__basic">
+                        <li>name</li>
+                        <li>Ege</li>
+                        <li>Country</li>
+                        <li>City</li>
+                        <li>telephone</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <ul class="font__basic">
+                        <li style="list-style: none;">Joki Andrianto</li>
+                        <li style="list-style: none;">18</li>
+                        <li style="list-style: none;">Indonesia</li>
+                        <li style="list-style: none;">Tangerang</li>
+                        <li style="list-style: none;">0895363044163</li>
+                    </ul>
+                </div>
+                <div class="col d-none d-lg-block">
+                    <p>For language, I can only speak one language, namely Indonesian, I am still learning in English
+                    </p>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <img src="img/about.png" data-aos="fade-right" data-aos-duration="1500" class="gambar_h_about">
+                </div>
+            </div>
+            <!-- <div class="col-md-3"><br>
+            <img src="h_about.png" alt="">
+          </div> -->
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="youtube" id="youtube">
+        <div class="container">
+            <div class="row pt-5 mb-5">
+                <div class="col text-center">
+                    <h2 class="bd-font" data-aos="fade-up"><b><i class='bx bxl-youtube'></i>My Youtube Channel</b></h2>
+                    <a href="https://www.youtube.com/channel/UCWpMr-32QH3E3VNOGhdirLw"
+                        class="btn btn-outline-dark">Visit my youtube channel</a>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" style="overflow: scroll;height: 350px;">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <figure class="figure">
+                        <div class="figure-img">
+                            <div class="kosong figure-img img-fluid">
+                                <h4 class="text-white text_yt_t">Coming soon</h4>
+                            </div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <i class='bx bxs-up-arrow-circle' style="font-size: 50px;margin-top: 50px;"></i>
+                            </a>
+                        </div>
+                        <figcaption class="figure-caption text-center">
+                            <h5 class="title_yt">Whatsapp UI Clone</h5>
+                            <a href="#" class="btn btn-outline-dark form-control btn_produk_s">More</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <figure class="figure">
+
+                        <div class="figure-img">
+                            <div class="kosong figure-img img-fluid">
+                                <h4 class="text-white text_yt_t">Coming soon</h4>
+                            </div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <i class='bx bxs-up-arrow-circle' style="font-size: 50px;margin-top: 50px;"></i>
+                            </a>
+                        </div>
+                        <figcaption class="figure-caption text-center">
+                            <h5 class="title_yt">Youtube UI Clone</h5>
+                            <a href="#" class="btn btn-outline-dark form-control btn_produk_s">More</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                    <figure class="figure">
+                        <div class="figure-img">
+                            <div class="kosong figure-img img-fluid">
+                                <h4 class="text-white text_yt_t">Coming soon</h4>
+                            </div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <i class='bx bxs-up-arrow-circle' style="font-size: 50px;margin-top: 50px;"></i>
+                            </a>
+                        </div>
+                        <figcaption class="figure-caption text-center">
+                            <h5 class="title_yt">Learn about CRUD
+                            </h5>
+                            <a href="#" class="btn btn-outline-dark form-control btn_produk_s">More</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- karya -->
+    <section class="karya" id="karya">
+        <div class="container">
+            <div class="row pt-5 mb-5">
+                <div class="col text-center">
+                    <h2 class="bd-font" data-aos="fade-up"><b><i class='bx bxs-timer'></i>Results in my spare time</b>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="row">
+                <div class="col">
+
+                    <ul class="nav nav-tabs mb-3 nav-fill nav_kat" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link nav_kategori" id="pills-backend-tab" data-toggle="pill"
+                                href="#pills-backend" role="tab" aria-controls="pills-backend"
+                                aria-selected="false">Backend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_kategori active" id="pills-frontend-tab" data-toggle="pill"
+                                href="#pills-frontend" role="tab" aria-controls="pills-frontend"
+                                aria-selected="true">Frontend</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav_kategori" id="pills-desain-tab" data-toggle="pill"
+                                href="#pills-desain" role="tab" aria-controls="pills-desain"
+                                aria-selected="false">Desain</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-backend" role="tabpanel"
+                            aria-labelledby="pills-backend-tab">
+
+                            <h5 class="text-center">Sedang di buat dalam bentuk vidio</h5>
+
+                        </div>
+                        <div class="tab-pane fade show active" id="pills-frontend" role="tabpanel"
+                            aria-labelledby="pills-frontend-tab">
+
+                            <style>
+
+                            </style>
+                            <div class="row" style="overflow: scroll;height: 350px;">
+                                <div class="col-sm-4 col-lg-4" style="text-align: center;">
+                                    <figure class="figure">
+                                        <video src="vidio/frontend/ui_yt.mp4" controls class="vidio_karya"></video>
+                                        <figcaption class="figure-caption text-center">
+                                            <h3 style="font-family: serif;font-weight: bold; color: black;">
+                                                Youtube UI Clone
+                                            </h3>
+                                            <div class="desk_karya">
+                                                <p>Made with HTML and CSS</p>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-4 col-lg-4" style="text-align: center;">
+                                    <figure class="figure">
+                                        <video src="vidio/frontend/ui_wa.mp4" controls class="vidio_karya"></video>
+                                        <figcaption class="figure-caption text-center">
+                                            <h3 style="font-family: serif;font-weight: bold; color: black;">
+                                                Whatsapp UI Clone
+                                            </h3>
+                                            <div class="desk_karya">
+                                                <p>Made with HTML and CSS</p>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-desain" role="tabpanel" aria-labelledby="pills-desain-tab">
+                            <!-- <h5 class="text-center">Sedang di buat dalam bentuk vidio</h5> -->
+                            <div class="row">
+                                <div class="col-lg-12 galeri_produk">
+                                    <figure class="figure gambar_produk">
+                                        <video src="vidio/desain/animasi.mp4" controls
+                                            class="figure-img img-fluid gambar_besar"></video>
+                                        <figcaption
+                                            class="figure-caption foto_produk_container d-flex justify-content-between">
+                                            <a href="#pills-desain">
+                                                <video src="vidio/desain/animasi.mp4" height="60px" width="70px"
+                                                    class="gambar_kecil active_gambar"></video>
+                                            </a>
+                                            <a href="#pills-desain">
+                                                <video src="vidio/frontend/ui_wa.mp4" height="60px" width="70px"
+                                                    class="gambar_kecil"></video>
+                                            </a>
+                                            <a href="#pills-desain">
+                                                <video src="vidio/frontend/ui_yt.mp4" height="60px" width="70px"
+                                                    class="gambar_kecil"></video>
+                                            </a>
+                                            <!-- <a href="#pills-desain">
+                                                <video src="" height="60px" width="70px" class="gambar_kecil"></video>
+                                            </a> -->
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- karya -->
+
+
+
+
+
+    <!-- hobby -->
+
+    <section class="hobi" id="hobi">
+        <div class="container">
+            <div class="row pt-5 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font" data-aos="fade-up"><b><i class='bx bx-timer'></i>My Hobbies</b></h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="img/hobi_gitar.png"
+                                    class="rounded-circle img-thumbnail" />
+                            </div>
+                            <div class="col-lg-8 col-md-9 text-center"><br>
+                                <h5 style="font-family: 'Courier New', Courier, monospace;"><b>Playing The
+                                        Guitar</b>
+                                </h5>
+                                <p
+                                    style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                                    I learned guitar in 2016, I learned guitar through YouTube and there are
+                                    several
+                                    competitions I have
+                                    participated in such as acoustic, padus, poetry musicalization, and others,
+                                    and
+                                    until now I sometimes
+                                    play guitar in my spare time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="img/hobi_buku.png"
+                                    class="rounded-circle img-thumbnail" />
+                            </div>
+                            <div class="col-lg-8 col-md-9 text-center"><br>
+                                <h5 style="font-family: 'Courier New' , Courier, monospace;"><b>Reading
+                                        Books</b></h5>
+                                <p style="font-family: monospace;">
+                                    In my spare time I sometimes read books. I have several books and books that
+                                    I
+                                    always read are
+                                    books
+                                    about programmers, books on motivation, books on inspirational stories.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </section><br>
+
+    <!-- Skill -->
+    <section id="skill" class="skill bg-light">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font" data-aos="fade-up"><b><i class='bx bxs-book-alt'></i>Professional
+                            Skills</b>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="container-fluid main-skill bd-card" data-aos="fade-down"
+                style="background-image: url(img/h_skill.png); height: 800px;overflow: scroll;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8 font__basic text-white">
+                            <p data-aos="fade-down">I've learned about analysis in making the web and prototyping, I
+                                learned through books and YouTube, the learning materials are like:
+                            </p>
+                            <div class="row">
+                                <div class="col-4 font__skill">
+                                    <ul>
+                                        <li>Flowchart</li>
+                                        <li>UmlClass</li>
+                                        <li>UserFlow</li>
+                                        <li>UX&UI</li>
+                                    </ul>
+                                </div>
+                                <div class="col-8 font__skill">
+                                    <ul>
+                                        <li>Use Case</li>
+                                        <li>Activity Diagram</li>
+                                        <li>User Interface</li>
+                                        <li>Class Diagram</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-4 ">
+                            <img src="img/h_about.png" data-aos="flip-up" data-aos-duration="1500">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white ">PHP</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">50%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">Mysql</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 45%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">45%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">HTML</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">60%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">Figma</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 55%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">55%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">CSS</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 60%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">60%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">Corel Draw</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 45%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">45%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">JavaScript</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">50%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h5 class="font__skill_2 text-white">Photoshop</h5>
+                            <div class="progress" style="background-color: aqua;">
+                                <div class="progress-bar" role="progressbar" style="width: 55%;" data-aos="fade-right"
+                                    data-aos-offset="100" data-aos-duration="800">55%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--  -->
+                    <style>
+                        .bg_f {
+                            background-color: black;
+                            border-right: 10px solid white;
+                            border-left: 10px solid white;
+                        }
+                    </style>
+                    <div class="row pt-3">
+                        <div class="col">
+                            <h4 class="font__skill_2 text-white text-center bg_f">
+                                Framework CSS
+                            </h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="font__skill_2 text-white text-center">Bootstrap</h5>
+                                        </div>
+                                        <div class="col mt-1">
+                                            <div class="progress" style="background-color: aqua;">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%;"
+                                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+                                                    60%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col">
+                            <h4 class="font__skill_2 text-white text-center bg_f">
+                                Framework JavaScript
+                            </h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="font__skill_2 text-white text-center">React JS</h5>
+                                        </div>
+                                        <div class="col mt-1">
+                                            <div class="progress" style="background-color: aqua;">
+                                                <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+                                                    30%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="font__skill_2 text-white text-center">Node JS</h5>
+                                        </div>
+                                        <div class="col mt-1">
+                                            <div class="progress" style="background-color: aqua;">
+                                                <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+                                                    30%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="font__skill_2 text-white text-center">Express JS</h5>
+                                        </div>
+                                        <div class="col mt-1">
+                                            <div class="progress" style="background-color: aqua;">
+                                                <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+                                                    30%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col">
+                            <h4 class="font__skill_2 text-white text-center bg_f">Framework PHP</h4>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="font__skill_2 text-white text-center">Codeigniter</h5>
+                                        </div>
+                                        <div class="col mt-1">
+                                            <div class="progress" style="background-color: aqua;">
+                                                <div class="progress-bar" role="progressbar" style="width: 40%;"
+                                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+                                                    40%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h5 class="font__skill_2 text-white text-center">Yii</h5>
+                                        </div>
+                                        <div class="col mt-1">
+                                            <div class="progress" style="background-color: aqua;">
+                                                <div class="progress-bar" role="progressbar" style="width: 30%;"
+                                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">
+                                                    30%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Skill Office-->
+            <div class="row mb-4 pt-4">
+                <div class="col text-center">
+                    <h2 class="bd-font"><b>Office</b></h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-down">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/WORD.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <p class="card-text text-muted">Microsoft Word</p>
+                            <div class="progress" style="background-color: black;">
+                                <div class="progress-bar-office" role="progressbar" style="width: 90%;"
+                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">90%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/EXCEL.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <p class="card-text text-muted">Microsoft Excel</p>
+                            <div class="progress" style="background-color: black;">
+                                <div class="progress-bar-office" role="progressbar" style="width: 92%;"
+                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">92%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/PPT.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <p class="card-text text-muted">Microsoft PowerPoint</p>
+                            <div class="progress" style="background-color: black;">
+                                <div class="progress-bar-office" role="progressbar" style="width: 90%;"
+                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">90%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/ACCESS.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <p class="card-text text-muted">Microsoft Access</p>
+                            <div class="progress" style="background-color: black;">
+                                <div class="progress-bar-office" role="progressbar" style="width: 80%;"
+                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">80%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="img/VISIO.png" alt="Card image cap">
+                        <div class="card-body text-center">
+                            <p class="card-text text-muted">Microsoft Visio</p>
+                            <div class="progress" style="background-color: black;">
+                                <div class="progress-bar-office" role="progressbar" style="width: 60%;"
+                                    data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">60%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+    </section>
+
+
+    <!-- Education-->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font"><b><i class='bx bxs-school'></i>Education</b></h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card bd-card" data-aos="fade-right">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="font-family: 'Courier New', Courier, monospace;">
+                            <b>LP3I SUDIRMAN
+                                TANGERANG</b>
+                        </h5>
+                        <p class="card-text text-center text-muted">2019 - 2022</p>
+                    </div>
+                    <img class="card-img-top" src="img/lp3ipoliteknik.png" alt="Card image cap">
+                </div>
+                <div class="card bd-card" data-aos="fade-up">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="font-family: 'Courier New', Courier, monospace;">
+                            <b>SMAN 12
+                                KAB.TANGERANG</b>
+                        </h5>
+                        <p class="card-text text-center text-muted">2016 - 2019</p>
+                    </div>
+                    <img class="card-img-top" src="img/sman12.png" alt="Card image cap">
+                </div>
+                <div class="card bd-card" data-aos="fade-right">
+                    <div class="card-body">
+                        <h5 class="card-title text-center" style="font-family: 'Courier New', Courier, monospace;">
+                            <b>MTS
+                                HIDAYATURROHMAN</b>
+                        </h5>
+                        <p class="card-text text-center text-muted">2013 - 2016</p>
+                    </div>
+                    <img class="card-img-top" src="img/mtshiro.png" alt="Card image cap">
+                </div>
+            </div>
+    </section><br>
+
+
+    <!--Achievement-->
+    <section class="achievement bg-light" id="achievement">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font"><b><i class='bx bx-book-reader'></i>Achievement</b></h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card bd-card">
+                    <div class="card-header" style="background-color: rgb(72, 232, 253)">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a href="#data1" class="btn nav-link achievement_tab active" role="tab"
+                                    data-toggle="tab"><b>Part 1</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#data2" class="btn nav-link achievement_tab" role="tab"
+                                    data-toggle="tab"><b>Part
+                                        2</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#data3" class="btn nav-link achievement_tab" role="tab"
+                                    data-toggle="tab"><b>Part 3</b></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content text-center">
+                        <div role="tabpanel" class="tab-pane active" id="data1" data-aos="fade-right">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Tingkatkan Produktifitas Dengan
+                                                Microsoft
+                                                Excel</h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIHC91KHTHEK7R/CERT-OIPYU3CG.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIHC91KHTHEK7R/CERT-R638F26N.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Learn HTML Concept For Programming
+                                            </h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKISOVAKB8KN8CO/CERT-K1J9JCYQ.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKISOVAKB8KN8CO/CERT-6U2NWCKR.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Statistics Foundation For Data
+                                                Science </h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIHPSNY50AXWP5/CERT-OVVTKUBL.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIHPSNY50AXWP5/CERT-P5YYNWMM.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Programming Foundation For Data
+                                                Science</h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKISOVAKB8KN8CO/CERT-3RY8Q50B.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKISOVAKB8KN8CO/CERT-UJU7TFUU.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="data2" data-aos="fade-right">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Kuasai TOEFL PBT, Raih Score 600+
+                                            </h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIWPYUCLE6JLII/CERT-QMN1EFUX.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIWPYUCLE6JLII/CERT-YX84KJGZ.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Mobile Programming Android & Kotlin
+                                            </h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIHC91KHTHEK7R/CERT-9FTIFHGC.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIHC91KHTHEK7R/CERT-BZP0WXA2.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Mastering Mobile Programming Android
+                                            </h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKISOVAKB8KN8CO/CERT-GPDIX47Q.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKISOVAKB8KN8CO/CERT-0P0R51YS.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Pengenalan Artificial Inteligence
+                                                Untuk
+                                                Bisnis</h5>
+                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
+                                                By Ruang
+                                                Guru</p><br>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIWZN12UQMXTMA/CERT-G9X8TQ4V.jpg"
+                                                class="btn btn-primary button_sertifikat">Sertifikat <br>
+                                                Penyelesaian</a>
+                                            <a href="https://img-certificate.ruangguru.com/JOKIWZN12UQMXTMA/CERT-02F7J8ZB.jpg"
+                                                class="btn btn-success button_sertifikat">Sertifikat <br>
+                                                Keunggulan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="data3" data-aos="fade-right">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Full-Stack Website Designer</h5>
+                                            <p class="card-text text-muted">DiSelenggarakan oleh Buildwithangga
+                                                dan
+                                                Sandhika Galih</p><br>
+                                            <a href="https://drive.google.com/file/d/1efKw5HkYvRbKB8rf2ytGsk1IJ_lC-l46/view?usp=sharing"
+                                                class="btn btn-primary button_sertifikat">Sertifikat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Belajar Dasar-Dasar Edit Foto ala
+                                                Influencer
+                                            </h5>
+                                            <p class="card-text text-muted">DiSelenggarakan oleh LP3I Jakarta
+                                            </p><br>
+                                            <a href="https://drive.google.com/file/d/1dzjWycins8i8wYGbbuGpXu6YOGko2QGX/view?usp=sharing"
+                                                class="btn btn-primary button_sertifikat">Sertifikat </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Menggali Lebih dalam dunia IT untuk
+                                                Generasi
+                                                Z</h5>
+                                            <p class="card-text text-muted">DiSelenggarakan oleh LP3I Jakarta
+                                            </p><br>
+                                            <a href="https://drive.google.com/file/d/1W1WsEZ17TL8JvibT8RKjf0iYrKKtGM1Y/view?usp=sharing"
+                                                class="btn btn-primary button_sertifikat">Sertifikat </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title bd-font">Career Talks Dunia Coding</h5>
+                                            <p class="card-text text-muted">DiSelenggarakan oleh DuniaCoding</p>
+                                            <br>
+                                            <a href="#" class="btn btn-primary button_sertifikat">Sertifikat
+                                                <br></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div><br><br>
+    </section>
+
+
+    <!--Contact-->
+    <section class="contact">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font"><b><i class='bx bxs-contact'></i>Contact</b></h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="card-body text-center" id="contact">
+                        <h5 class="card-title text-center bd-font" style="font-size: 30px;">Contact Me</h5>
+                        <a href="#" title="Contact me by Phone" class="home__social-icon" style="color: black;"><i
+                                class='bx bxs-phone-call'></i></a>
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="https:api.whatsapp.com/send?phone=62895363044163" style="color: black;"
+                            title="Contact me by Whatsapp" class="home__social-icon "><i
+                                class='bx bxl-whatsapp'></i></a>
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="#" title="Contact me by Gmail" class="home__social-icon" style="color: black;"><i
+                                class='bx bx-mail-send'></i></a>
+                    </div>
+                </div><br>
+
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                        <strong>Thank you <i class='bx bx-wink-smile'></i>,</strong> your message has been
+                        received.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-primary my-alertt" style="color: black;" role="alert">
+                        <b style="font-family: 'Courier New', Courier, monospace;"> Please send message about
+                            this
+                            website <i class='bx bx-wink-smile'></i></b>
+                    </div>
+                    <form name="resume-joky-contact-form">
+                        <div class="form-group">
+                            <label for="nama" class="bd-font"><b>Nama</b></label>
+                            <input type="text" name="nama" class="form-control" id="nama"
+                                placeholder="Enter your name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="bd-font"><b>Email</b></label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Enter your email..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telp" class="bd-font"><b>Telepon</b></label>
+                            <input type="tel" name="telepon" class="form-control" id="telp"
+                                placeholder="Enter your phone number..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan" class="bd-font"><b>Pesan</b></label>
+                            <textarea name="pesan" id="pesan" class="form-control"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-kirim form-control">
+                                        Send
+                                    </button>
+
+                                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status"
+                                            aria-hidden="true"></span>
+                                        Loading...
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <button type="reset" class="btn btn-danger form-control">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section><br>
+
+
+
+    <!-- Footer-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000" fill-opacity="1"
+            d="M0,224L40,229.3C80,235,160,245,240,234.7C320,224,400,192,480,176C560,160,640,160,720,181.3C800,203,880,245,960,229.3C1040,213,1120,139,1200,133.3C1280,128,1360,192,1400,224L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+    <footer class="footer">
+        <div class="container text-center pt-8">
+            <a href="#" title="Follow me on Facebook" class="home__social-icon-footer "><i
+                    class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/joky_anryanto/" title="Follow me on Instagram"
+                class="home__social-icon-footer"><i class='bx bxl-instagram'></i></a>
+            <a href="#" title="Follow me on Twitter" class="home__social-icon-footer"><i class='bx bxl-twitter'></i></a>
+            <div class="text-center " style="color: aliceblue;">
+                <p>Copyright &copy; 2021 - Joki Andrianto. All Rights Reserved</p>
+            </div>
+    </footer>
+
+
+    <!-- MAIN JS-->
+    <script src="js/main.js"></script>
+    <!-- boxicons -->
+    <script src="js/boxicons/boxicons.js"></script>
+
+    <!--AOS-->
+    <script src="js/dataaos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!--  -->
+    <!-- <script type="text/javascript" src="js/ngetik.js"></script> -->
+    <script>
+        const txtElement = ['Welcome to my simple web'];
+        let count = 0;
+        let txtIndex = 0;
+        let currentTxt = '';
+        let words = '';
+
+        (function ngetik() {
+
+            if (count == txtElement.length) {
+                count = 0;
+            }
+
+            currentTxt = txtElement[count];
+
+            words = currentTxt.slice(0, ++txtIndex);
+            document.querySelector('.efek-ngetik').textContent = words;
+
+            if (words.length == currentTxt.length) {
+                count++;
+                txtIndex = 0;
+            }
+
+            setTimeout(ngetik, 100);
+
+        })();
+    </script>
+
+
+    <!-- pilih gambar / desain -->
+    <script>
+        const gambar_produk = document.querySelector('.gambar_produk');
+        const gambar_besar = document.querySelector('.gambar_besar');
+        const gambar_kecil = document.querySelectorAll('.gambar_kecil');
+
+        gambar_produk.addEventListener('click', function (e) {
+            // cek apakah yang diklik adalah gambar_kecil
+            if (e.target.className == 'gambar_kecil') {
+                gambar_besar.src = e.target.src;
+                gambar_besar.classList.add('fade');
+                setTimeout(function () {
+                    gambar_besar.classList.remove('fade');
+                }, 500);
+
+                gambar_kecil.forEach(function (gambar_kecil2) {
+                    if (gambar_kecil2.classList.contains('active_gambar')) {
+                        gambar_kecil2.classList.remove('active_gambar');
+                    }
+
+                });
+
+                e.target.classList.add('active_gambar');
+            };
+        });
+    </script>
+    <!-- akhir pilih gambar / desain -->
+
+
+    <!-- Contact form -->
+    <!-- yang tidak dikasih komentar itu dari copas github.com/jamiewilson/form-to-google-sheets -->
+    <!-- yang dikasih komentar itu dari wpu/shandika -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTJ78WB2gx04JSk9BHzwKnbRw6cSIEW9-mlG2788V2gE6V1MKOeF-IuwiDxmtG73Y1Fg/exec'
+        const form = document.forms['resume-joky-contact-form']
+        // variabel namanya btnkirim , jquey tolong cariin ada ga yang kelas namanya .btn-kirim
+        const btnKirim = document.querySelector('.btn-kirim');
+        // variabel namanya btnloading , jquey tolong cariin ada ga yang kelas namanya .btn-loading
+        const btnLoading = document.querySelector('.btn-loading');
+        // 
+        const myAlert = document.querySelector('.my-alert');
+        const myAlertt = document.querySelector('.my-alertt');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // ketika tombol submit diklik
+            // tampilkan tombol loading ,hilangkan tombol kirimpesan
+            // javascript carikan saya btnloading liat didalam classlist nya ada ga kelas namanya d-none , kalau ada hilangkan
+            btnLoading.classList.toggle('d-none');
+            // javascript carikan saya btnkirim liat didalam classlist nya ada ga kelas namanya d-none , kalau ga ada tambahkan
+            btnKirim.classList.toggle('d-none');
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    // tampilkan tombol loading ,hilangkan tombol kirimpesan
+                    // javascript carikan saya btnloading liat didalam classlist nya ada ga kelas namanya d-none , kalau ada hilangkan
+                    btnLoading.classList.toggle('d-none');
+                    // javascript carikan saya btnkirim liat didalam classlist nya ada ga kelas namanya d-none , kalau ga ada tambahkan
+                    btnKirim.classList.toggle('d-none');
+                    // tampilkan alert
+                    // sebelumnya di class my-alert ada d-none
+                    // kalau berhasil hilangkan kelas d-none
+                    myAlert.classList.toggle('d-none');
+                    // 
+                    myAlertt.classList.toggle('d-none');
+                    // reset formnya / hilangkan isi pesan yang di ampilan web
+                    form.reset();
+
+                    console.log('Success!', response)
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- Akhir contact form -->
+
+    <!-- pesan copyright ketik ctr-u,shift i -->
+    <script>
+        $(document).bind("contextmenu", function (e) {
+            alert('Copyright © 2021 - Joki Andrianto.')//silahkan tulis pesan yang akan ditampilkan
+        });
+    </script>
+
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                alert('Copyright © 2021 - Joki Andrianto.')
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                alert('Copyright © 2021 - Joki Andrianto.')
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                alert('Copyright © 2021 - Joki Andrianto.')
+                return false;
+            }
+        }
+    </script>
+    <!-- akhir copyright -->
+
+
+
+
+</body>
+
+</html>

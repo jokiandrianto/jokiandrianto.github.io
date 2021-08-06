@@ -1,0 +1,41 @@
+.main-skill {
+    background-image: url(../h_skill.png) ;
+    padding: 4% 0;
+    border-radius: 5px;
+  }
+  
+  .main-skill h5 {
+    color: rgb(0, 0, 0);
+  }
+  
+/*  */
+.progress {
+
+  border: 2px solid rgb(0, 0, 0);
+  margin: 1% 0;
+  height: 17px;
+}
+
+.progress-bar {
+  background-color: rgb(240, 220, 107);
+  color: rgb(0, 0, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*  */
+
+
+  .progress-bar-office{
+    background-color: rgb(72, 232, 253);
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .card {
+      border-radius: 20px;
+  }
+
+  h2 {
+      margin: 10px;
+      text-align: center;
+  }
