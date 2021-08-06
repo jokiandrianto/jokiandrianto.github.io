@@ -1164,62 +1164,12 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
 
     <!--  -->
-    <!-- <script type="text/javascript" src="js/ngetik.js"></script> -->
-    <script>
-        const txtElement = ['Welcome to my simple web'];
-        let count = 0;
-        let txtIndex = 0;
-        let currentTxt = '';
-        let words = '';
+    <script type="text/javascript" src="js/ngetik.js"></script>
 
-        (function ngetik() {
-
-            if (count == txtElement.length) {
-                count = 0;
-            }
-
-            currentTxt = txtElement[count];
-
-            words = currentTxt.slice(0, ++txtIndex);
-            document.querySelector('.efek-ngetik').textContent = words;
-
-            if (words.length == currentTxt.length) {
-                count++;
-                txtIndex = 0;
-            }
-
-            setTimeout(ngetik, 100);
-
-        })();
-    </script>
 
 
     <!-- pilih gambar / desain -->
-    <script>
-        const gambar_produk = document.querySelector('.gambar_produk');
-        const gambar_besar = document.querySelector('.gambar_besar');
-        const gambar_kecil = document.querySelectorAll('.gambar_kecil');
-
-        gambar_produk.addEventListener('click', function (e) {
-            // cek apakah yang diklik adalah gambar_kecil
-            if (e.target.className == 'gambar_kecil') {
-                gambar_besar.src = e.target.src;
-                gambar_besar.classList.add('fade');
-                setTimeout(function () {
-                    gambar_besar.classList.remove('fade');
-                }, 500);
-
-                gambar_kecil.forEach(function (gambar_kecil2) {
-                    if (gambar_kecil2.classList.contains('active_gambar')) {
-                        gambar_kecil2.classList.remove('active_gambar');
-                    }
-
-                });
-
-                e.target.classList.add('active_gambar');
-            };
-        });
-    </script>
+ <script type="text/javascript" src="js/pilih_vidio.js"></script>
     <!-- akhir pilih gambar / desain -->
 
 
@@ -1227,47 +1177,7 @@
     <!-- yang tidak dikasih komentar itu dari copas github.com/jamiewilson/form-to-google-sheets -->
     <!-- yang dikasih komentar itu dari wpu/shandika -->
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTJ78WB2gx04JSk9BHzwKnbRw6cSIEW9-mlG2788V2gE6V1MKOeF-IuwiDxmtG73Y1Fg/exec'
-        const form = document.forms['resume-joky-contact-form']
-        // variabel namanya btnkirim , jquey tolong cariin ada ga yang kelas namanya .btn-kirim
-        const btnKirim = document.querySelector('.btn-kirim');
-        // variabel namanya btnloading , jquey tolong cariin ada ga yang kelas namanya .btn-loading
-        const btnLoading = document.querySelector('.btn-loading');
-        // 
-        const myAlert = document.querySelector('.my-alert');
-        const myAlertt = document.querySelector('.my-alertt');
-
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            // ketika tombol submit diklik
-            // tampilkan tombol loading ,hilangkan tombol kirimpesan
-            // javascript carikan saya btnloading liat didalam classlist nya ada ga kelas namanya d-none , kalau ada hilangkan
-            btnLoading.classList.toggle('d-none');
-            // javascript carikan saya btnkirim liat didalam classlist nya ada ga kelas namanya d-none , kalau ga ada tambahkan
-            btnKirim.classList.toggle('d-none');
-
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    // tampilkan tombol loading ,hilangkan tombol kirimpesan
-                    // javascript carikan saya btnloading liat didalam classlist nya ada ga kelas namanya d-none , kalau ada hilangkan
-                    btnLoading.classList.toggle('d-none');
-                    // javascript carikan saya btnkirim liat didalam classlist nya ada ga kelas namanya d-none , kalau ga ada tambahkan
-                    btnKirim.classList.toggle('d-none');
-                    // tampilkan alert
-                    // sebelumnya di class my-alert ada d-none
-                    // kalau berhasil hilangkan kelas d-none
-                    myAlert.classList.toggle('d-none');
-                    // 
-                    myAlertt.classList.toggle('d-none');
-                    // reset formnya / hilangkan isi pesan yang di ampilan web
-                    form.reset();
-
-                    console.log('Success!', response)
-
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
+       <script type="text/javascript" src="js/contact_form.js"></script>
     </script>
     <!-- Akhir contact form -->
 
