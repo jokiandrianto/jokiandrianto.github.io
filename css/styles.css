@@ -778,6 +778,7 @@
 
         .home__name {
             font-size: 80px;
+            color: red;
             -webkit-text-stroke: 2px black;
         }
 
