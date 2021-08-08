@@ -578,11 +578,11 @@
 
         .home__name {
             font-size: 50px;
+            color: aqua;
             -webkit-text-stroke: 2px black;
         }
 
         .home__container {
-            height: 70vh;
             grid-template-rows: max-content .5fr;
             align-content: flex-end;
         }
@@ -638,11 +638,11 @@
 
         .home__name {
             font-size: 50px;
+            color: gold;
             -webkit-text-stroke: 2px black;
         }
 
         .home__container {
-            height: 70vh;
             grid-template-rows: max-content .5fr;
             align-content: flex-end;
         }
