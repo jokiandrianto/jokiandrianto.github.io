@@ -563,6 +563,12 @@
         .nav__toggle {
             display: none;
         }
+        .home__img{
+            display: none;
+        }
+        .home__social{
+            display: none;
+        }
 
 
     }
