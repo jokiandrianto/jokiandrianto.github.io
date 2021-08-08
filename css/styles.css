@@ -372,9 +372,9 @@
         background: #fff;
         border-radius: 50px;
         box-shadow:
-            0 0 10px rgb(255, 255, 255, 1),
-            0 0 10px rgb(255, 255, 255, 1),
-            0 0 10px rgb(255, 255, 255, 1),
+            0 0 10px rgb(173, 173, 173,1),
+            0 0 10px rgb(173, 173, 173),
+            0 0 10px rgb(173, 173, 173,1),
             0 0 0 75px rgb(255, 255, 255, 0.05),
             0 0 0 60px rgb(255, 255, 255, 0.05),
             0 0 0 45px rgb(255, 255, 255, 0.05),
@@ -474,7 +474,7 @@
     .achievement_tab {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 18px;
-        color: black;
+        color: white;
         transition: 1s;
     }
 
@@ -763,7 +763,11 @@
         width: 300px;
         border-top: 3px solid #999;
     }
-
+    .contact a ,
+    .contact h5 
+    {
+        color: black;
+    }
 
     section.about,
     .education,
@@ -815,3 +819,21 @@
         margin: 10px;
         text-align: center;
     }
+    /* mode dark */
+    .mode_light {
+        transition: 0.5s;
+        background-color: aqua;
+        border-radius: 50px !important;
+        border: none;
+    }
+
+
+    .mode_dark {
+        border: none;
+        border-radius: 50px !important;
+    }
+
+    .mode_dark:hover {
+        background-color: aqua;
+    }
+    /* mode dark */
