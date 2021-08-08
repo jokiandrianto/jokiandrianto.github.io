@@ -290,7 +290,7 @@
 
     /*=== home ====*/
     .home {
-        /* background-image: url(../bg_home.png); */
+       background-image: url(../img/bg_home.png);
         /* background-color: rgb(72, 232, 253); */
         overflow: hidden;
     }
