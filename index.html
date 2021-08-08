@@ -25,7 +25,6 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="css/dataaos/aos.css">
 
-
     <!--css-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -36,16 +35,19 @@
 
 <body>
 
-
-
-
-
-
-
     <!--header-->
     <header class="header" id="header">
         <nav class="nav bd-container">
             <a href="#" class="nav__logo"><b>Joki Andrianto</b></a>
+            <div class="col">
+                <div class="btn-group" role="group" aria-label="Basic example"
+                    style="border: 2px solid black;background-color: white;border-radius: 50px;">
+                    <span class="icon btn btn-outline-dark mode_light" onclick="setDarkMode(false)"><i
+                            class='bx bxs-sun'></i></span>
+                    <span class="icon btn btn-outline-dark mode_dark" onclick="setDarkMode(true)"><i
+                            class='bx bxs-moon'></i></span>
+                </div>
+            </div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#about" class="nav__link"><i class='bx bx-info-circle'></i>About</a>
@@ -99,7 +101,7 @@
 
 
     <!--About-->
-    <section id="about" class="about bg-light p-3">
+    <section id="about" class="about p-3">
         <div class="container bd-card " data-aos="fade-up">
             <div class="row justify-content-center mb-3 pt-4">
                 <div class="col">
@@ -284,11 +286,11 @@
                             <div class="row" style="overflow: scroll;height: 350px;">
                                 <div class="col-sm-4 col-lg-4" style="text-align: center;">
                                     <figure class="figure">
-                                         <iframe src="https://www.youtube.com/embed/ZU1oi_HVGDY" frameborder="0"
+                                        <iframe src="https://www.youtube.com/embed/ZU1oi_HVGDY" frameborder="0"
                                             allowfullscreen class="vidio_karya"></iframe>
                                         </iframe>
                                         <figcaption class="figure-caption text-center">
-                                            <h3 style="font-family: serif;font-weight: bold; color: black;">
+                                            <h3 style="font-family: serif;font-weight: bold; ">
                                                 Instagram UI Clone
                                             </h3>
                                             <div class="desk_karya">
@@ -299,10 +301,10 @@
                                 </div>
                                 <div class="col-sm-4 col-lg-4" style="text-align: center;">
                                     <figure class="figure">
-                                         <iframe src="https://www.youtube.com/embed/kYviOCHY8x0" frameborder="0"
+                                        <iframe src="https://www.youtube.com/embed/kYviOCHY8x0" frameborder="0"
                                             allowfullscreen class="vidio_karya"></iframe>
                                         <figcaption class="figure-caption text-center">
-                                            <h3 style="font-family: serif;font-weight: bold; color: black;">
+                                            <h3 style="font-family: serif;font-weight: bold; ">
                                                 Youtube UI Clone
                                             </h3>
                                             <div class="desk_karya">
@@ -316,7 +318,7 @@
                                         <iframe src="https://www.youtube.com/embed/RqlrvELd3YM" frameborder="0"
                                             allowfullscreen class="vidio_karya"></iframe>
                                         <figcaption class="figure-caption text-center">
-                                            <h3 style="font-family: serif;font-weight: bold; color: black;">
+                                            <h3 style="font-family: serif;font-weight: bold; ">
                                                 Whatsapp UI Clone
                                             </h3>
                                             <div class="desk_karya">
@@ -335,17 +337,17 @@
                             <!-- <h5 class="text-center">Sedang di buat dalam bentuk vidio</h5> -->
                             <div class="row">
                                 <div class="col-lg-12 galeri_produk">
-                                     <figure class="figure gambar_produk">
-                                          <iframe src="https://www.youtube.com/embed/YfdqlRePIPU" frameborder="0"
+                                    <figure class="figure gambar_produk">
+                                        <iframe src="https://www.youtube.com/embed/YfdqlRePIPU" frameborder="0"
                                             allowfullscreen class="figure-img img-fluid gambar_besar">
-                                         </iframe>
-<!--                                         <video src="vidio/desain/animasi.mp4" controls
-                                            class="figure-img img-fluid gambar_besar"></video> -->
+                                        </iframe>
+                                        <!--                                         <video src="vidio/desain/animasi.mp4" controls
+                                          class="figure-img img-fluid gambar_besar"></video> -->
                                         <figcaption
                                             class="figure-caption foto_produk_container d-flex justify-content-between">
                                             <a href="#pills-desain">
-                                                <video src="https://www.youtube.com/embed/YfdqlRePIPU" height="60px" width="70px"
-                                                    class="gambar_kecil active_gambar"></video>
+                                                <video src="https://www.youtube.com/embed/YfdqlRePIPU" height="60px"
+                                                    width="70px" class="gambar_kecil active_gambar"></video>
                                             </a>
                                             <a href="#pills-desain">
                                                 <video src="vidio/frontend/ui_yt.mp4" height="60px" width="70px"
@@ -357,7 +359,6 @@
                                             </a>
                                         </figcaption>
                                     </figure>
-                                  
                                 </div>
                             </div>
                         </div>
@@ -371,10 +372,6 @@
     </section>
 
     <!-- karya -->
-
-
-
-
 
     <!-- hobby -->
 
@@ -446,7 +443,7 @@
     </section><br>
 
     <!-- Skill -->
-    <section id="skill" class="skill bg-light">
+    <section id="skill" class="skill">
         <div class="container">
             <div class="row pt-4 mb-4">
                 <div class="col text-center">
@@ -818,7 +815,7 @@
 
 
     <!--Achievement-->
-    <section class="achievement bg-light" id="achievement">
+    <section class="achievement" id="achievement">
         <div class="container">
             <div class="row mb-4">
                 <div class="col text-center">
@@ -829,7 +826,7 @@
 
             <div class="container">
                 <div class="card bd-card">
-                    <div class="card-header" style="background-color: rgb(72, 232, 253)">
+                    <div class="card-header" style="background-color: black">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
                                 <a href="#data1" class="btn nav-link achievement_tab active" role="tab"
@@ -1072,16 +1069,15 @@
                 <div class="col-lg-4" data-aos="fade-right">
                     <div class="card-body text-center" id="contact">
                         <h5 class="card-title text-center bd-font" style="font-size: 30px;">Contact Me</h5>
-                        <a href="#" title="Contact me by Phone" class="home__social-icon" style="color: black;"><i
+                        <a href="#" title="Contact me by Phone" class="home__social-icon"><i
                                 class='bx bxs-phone-call'></i></a>
                     </div>
                     <div class="card-body text-center">
-                        <a href="https:api.whatsapp.com/send?phone=62895363044163" style="color: black;"
-                            title="Contact me by Whatsapp" class="home__social-icon "><i
-                                class='bx bxl-whatsapp'></i></a>
+                        <a href="https:api.whatsapp.com/send?phone=62895363044163" title="Contact me by Whatsapp"
+                            class="home__social-icon "><i class='bx bxl-whatsapp'></i></a>
                     </div>
                     <div class="card-body text-center">
-                        <a href="#" title="Contact me by Gmail" class="home__social-icon" style="color: black;"><i
+                        <a href="#" title="Contact me by Gmail" class="home__social-icon"><i
                                 class='bx bx-mail-send'></i></a>
                     </div>
                 </div><br>
@@ -1094,7 +1090,7 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="alert alert-primary my-alertt" style="color: black;" role="alert">
+                    <div class="alert alert-primary my-alertt" role="alert">
                         <b style="font-family: 'Courier New', Courier, monospace;"> Please send message about
                             this
                             website <i class='bx bx-wink-smile'></i></b>
@@ -1182,16 +1178,66 @@
     <script src="js/bootstrap/bootstrap.min.js"></script>
 
     <!--  -->
-    <script type="text/javascript" src="js/ngetik.js"></script>
+    <!-- <script type="text/javascript" src="js/ngetik.js"></script> -->
+    <script>
+        const txtElement = ['Welcome to my simple web'];
+        let count = 0;
+        let txtIndex = 0;
+        let currentTxt = '';
+        let words = '';
 
+        (function ngetik() {
+
+            if (count == txtElement.length) {
+                count = 0;
+            }
+
+            currentTxt = txtElement[count];
+
+            words = currentTxt.slice(0, ++txtIndex);
+            document.querySelector('.efek-ngetik').textContent = words;
+
+            if (words.length == currentTxt.length) {
+                count++;
+                txtIndex = 0;
+            }
+
+            setTimeout(ngetik, 100);
+
+        })();
+    </script>
 
 
     <!-- pilih gambar / desain -->
- <script type="text/javascript" src="js/pilih_vidio.js"></script>
+    <script>
+        const gambar_produk = document.querySelector('.gambar_produk');
+        const gambar_besar = document.querySelector('.gambar_besar');
+        const gambar_kecil = document.querySelectorAll('.gambar_kecil');
+
+        gambar_produk.addEventListener('click', function (e) {
+            // cek apakah yang diklik adalah gambar_kecil
+            if (e.target.className == 'gambar_kecil') {
+                gambar_besar.src = e.target.src;
+                gambar_besar.classList.add('fade');
+                setTimeout(function () {
+                    gambar_besar.classList.remove('fade');
+                }, 500);
+
+                gambar_kecil.forEach(function (gambar_kecil2) {
+                    if (gambar_kecil2.classList.contains('active_gambar')) {
+                        gambar_kecil2.classList.remove('active_gambar');
+                    }
+
+                });
+
+                e.target.classList.add('active_gambar');
+            };
+        });
+    </script>
     <!-- akhir pilih gambar / desain -->
 
 
-  <!-- Contact form -->
+    <!-- Contact form -->
     <!-- yang tidak dikasih komentar itu dari copas github.com/jamiewilson/form-to-google-sheets -->
     <!-- yang dikasih komentar itu dari wpu/shandika -->
     <script>
@@ -1266,6 +1312,84 @@
         }
     </script>
     <!-- akhir copyright -->
+
+    <style>
+        #darkmode {
+            background-color: rgb(49, 49, 49);
+            color: white;
+        }
+
+        #darkmode .mode_dark {
+            transition: 0.5s;
+            background-color: aqua;
+        }
+
+        #darkmode .mode_light {
+            background-color: unset;
+        }
+
+        #darkmode .mode_light:hover {
+            background-color: aqua;
+        }
+
+        #darkmode h2,
+        #darkmode h3,
+        #darkmode h5,
+        #darkmode p,
+        #darkmode a {
+            color: white;
+        }
+
+        #darkmode .education h5 {
+            color: black;
+        }
+
+        #darkmode .achievement h5 {
+            color: black;
+        }
+
+        #darkmode .kosong {
+            color: white;
+            border: 2px solid white;
+        }
+
+        #darkmode .nav .active {
+            color: black;
+        }
+
+        #darkmode .nav .active {
+            color: black;
+        }
+
+        #darkmode .contact a,
+        #darkmode .contact h5 {
+            color: white;
+        }
+
+        #darkmode .home__data a:hover {
+            background-color: black;
+        }
+
+        #darkmode .contact a:hover {
+            background-color: black;
+        }
+
+        #darkmode .home__social a:hover {
+            background-color: black;
+        }
+    </style>
+
+    <!-- dark mode -->
+    <script>
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.body.setAttribute('id', 'darkmode')
+            } else {
+                document.body.setAttribute('id', '')
+            }
+        }
+    </script>
+    <!-- akhir dark mode -->
 
 
 
