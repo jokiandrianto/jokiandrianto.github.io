@@ -551,6 +551,14 @@
             margin: 0;
         }
 
+        .nav__list {
+            display: flex;
+        }
+
+        .nav__item {
+            margin-left: var(--mb-1);
+            margin-bottom: 0;
+        }
 
         .nav__toggle {
             display: none;
