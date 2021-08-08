@@ -297,7 +297,7 @@
 
     .home__container {
         position: relative;
-        height: 600px;
+        height: calc(100vh - var(--header-height));
         grid-template-rows: repeat(2, max-content);
         align-content: space-around;
         row-gap: 2rem;
@@ -353,7 +353,6 @@
 
     .home__img img {
         width: 240px;
-        height: 300px;
         margin-bottom: 50px;
     }
 
@@ -551,7 +550,6 @@
     @media screen and (min-width: 576px) {
         .home__img img {
             width: 330px;
-            height: 400px;
         }
 
         .vidio_karya {
@@ -668,7 +666,7 @@
         }
 
         .home__container {
-            height: 600px;
+            height: 100vh;
             grid-template-rows: max-content .5fr;
             align-content: flex-end;
         }
@@ -698,7 +696,6 @@
 
         .home__img img {
             width: 340px;
-            height: 400px;
             margin-bottom: 50px;
         }
 
