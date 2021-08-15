@@ -523,6 +523,9 @@
         font-weight: bold;
         font-family: serif;
     }
+    .youtube .btn_visit_sub span{
+       display: none;
+    }
 
     .nav .active {
         text-decoration: underline;
@@ -570,6 +573,9 @@
             height: 400px;
             width: 450px;
             border: 3px solid black;
+        }
+        .youtube .btn_visit_sub span{
+           display: unset;
         }
 
         .foto_produk_container {
