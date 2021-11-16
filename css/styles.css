@@ -296,7 +296,7 @@
 
     /*=== home ====*/
     .home {
-        background-image: url(../img/bg_home.png);
+        background-image: linear-gradient(to bottom right, #00426D, rgb(0, 206, 206));
         /* background-color: rgb(72, 232, 253); */
         overflow: hidden;
     }
@@ -437,6 +437,28 @@
         border-radius: 30px;
         text-decoration: underline;
     }
+    .btn_me{
+        background-color: #00426D;
+        color: aqua;
+        border: 1px solid black;
+        transition: 0.7s;
+    }
+    .btn_me:hover{
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+    }
+    .btn_me2{
+        background-color: aqua;
+        color: #00426D;
+        border: 1px solid black;
+        transition: 0.7s;
+    }
+    .btn_me2:hover{
+        background-color: black;
+        color: white;
+        border-radius: 30px;
+    }
 
     .button-light {
         background-color: rgb(72, 232, 253);
@@ -450,7 +472,6 @@
     }
 
     .button_sertifikat:hover {
-        border-radius: 20px;
         color: white;
         background-color: black;
         text-decoration: underline;
@@ -487,11 +508,10 @@
     }
 
     .achievement_tab:hover {
-        background-color: white;
+        background-color: aqua;
         text-decoration: underline;
 
     }
-
     .figure-img {
         position: relative;
     }
@@ -722,10 +742,8 @@
         }
 
         .button_sertifikat:hover {
-            border-radius: 30px;
             color: white;
             background-color: black;
-            font-style: italic;
         }
 
         .gambar_h_about {
