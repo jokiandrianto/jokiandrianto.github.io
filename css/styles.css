@@ -546,7 +546,7 @@
 
     .nav_kategori {
         transition: 1s;
-        font-size: 13px;
+        font-size: 11px;
         color: black;
         font-weight: bold;
         font-family: serif;
@@ -902,3 +902,148 @@
         }
     
         /* akhir scroll ke atas */
+
+
+
+
+/* Sertifikat */
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay img {
+    max-height: 100%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
+
+.overlay:target img {
+    animation: ZoomDanFade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -35px;
+    text-decoration: none;
+    color: white;
+    opacity: 0;
+}
+
+.overlay:target .close {
+    animation: slideDownFade .5s .5s forwards;
+}
+
+/* animasi overlay */
+@keyframes ZoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownFade {
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+/* akhir Sertifikat */
+
+
+/* dark mode */
+#darkmode {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    transition: 0.5s;
+}
+
+#darkmode .mode_dark {
+    transition: 0.5s;
+    background-color: aqua;
+}
+
+#darkmode .mode_light {
+    background-color: unset;
+}
+
+#darkmode .mode_light:hover {
+    background-color: aqua;
+}
+
+#darkmode h2,
+#darkmode h3,
+#darkmode h5,
+#darkmode p,
+#darkmode a {
+    color: white;
+}
+
+#darkmode .education h5 {
+    color: black;
+}
+
+#darkmode .achievement h5 {
+    color: black;
+}
+
+#darkmode .kosong {
+    color: white;
+    border: 2px solid white;
+}
+
+#darkmode .nav .active {
+    color: black;
+}
+
+#darkmode .nav .active {
+    color: black;
+}
+
+#darkmode .contact a,
+#darkmode .contact h5 {
+    color: white;
+}
+
+#darkmode .home__data a:hover {
+    background-color: black;
+}
+
+#darkmode .contact a:hover {
+    background-color: black;
+}
+
+#darkmode .home__social a:hover {
+    background-color: black;
+}
+/* akhir dark mode */
