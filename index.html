@@ -13,7 +13,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
 
-    <!-- SKILL CSS -->
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/skill.css">
 
 
@@ -25,8 +26,9 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="css/dataaos/aos.css">
 
-    <!--css-->
-    <link rel="stylesheet" href="css/styles.css">
+<!-- sertifikat -->
+<script type="text/javascript" src="js/json.js"></script>
+
 </head>
 
 
@@ -83,8 +85,8 @@
             </div>
 
             <div class="home__social">
-                <a href="#" title="Follow me on Facebook" class="home__social-icon "><i
-                        class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.linkedin.com/in/jokiandrianto/" title="Follow me on Linkedin" class="home__social-icon ">
+                    <i class='bx bxl-linkedin-square'></i></a>
                 <a href="https://www.instagram.com/joky_anryanto/" title="Follow me on Instagram"
                     class="home__social-icon"><i class='bx bxl-instagram'></i></a>
                 <a href="#youtube" title="Subscribe to my youtube channel" class="home__social-icon">
@@ -367,81 +369,15 @@
                     </div>
 
                     <div class="row">
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white ">PHP</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 50%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">50%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">Mysql</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 45%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">45%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <script>
+                        skill_1.forEach(function(obj) { 
+                        document.write(
+                        '<div class="col-6"><h5 class="font__skill_2 text-white ">'+obj.nama_skill+'</h5><div class="progress" style="background-color: aqua;"><div class="progress-bar" role="progressbar" style="width: '+obj.proses_skill+';" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">'+obj.proses_skill+'</div></div></div>'
+                             ); 
+                           });
+                        </script>
 
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">HTML</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">60%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">Figma</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 55%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">55%
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">CSS</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">60%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">Corel Draw</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 45%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">45%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">JavaScript</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 50%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">50%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <h5 class="font__skill_2 text-white">Photoshop</h5>
-                            <div class="progress" style="background-color: aqua;">
-                                <div class="progress-bar" role="progressbar" style="width: 55%;" data-aos="fade-right"
-                                    data-aos-offset="100" data-aos-duration="800">55%
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <!--  -->
                     <style>
@@ -647,7 +583,7 @@
                 </div>
             </div><br>
 
-                <!-- karya -->
+    <!-- karya -->
     <div class="karya" id="karya">
         <div class="container">
             <div class="row pt-5 mb-5">
@@ -829,79 +765,6 @@
 
 
     <!--Achievement-->
-    <style>
-        .overlay {
-        width: 0;
-        height: 0;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0);
-        z-index: 9999;
-        transition: .8s;
-        text-align: center;
-        padding: 100px 0;
-
-    }
-
-    .overlay:target {
-        width: auto;
-        height: auto;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .overlay img {
-        max-height: 100%;
-        margin: 0 auto;
-        box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
-    }
-
-    .overlay:target img {
-        animation: ZoomDanFade 1s;
-    }
-
-    .overlay .close {
-        position: absolute;
-        top: 50px;
-        left: 50%;
-        margin-left: -35px;
-        text-decoration: none;
-        color: white;
-        opacity: 0;
-    }
-
-    .overlay:target .close {
-        animation: slideDownFade .5s .5s forwards;
-    }
-
-    /* animasi overlay */
-    @keyframes ZoomDanFade {
-        0% {
-            transform: scale(0);
-            opacity: 0;
-        }
-
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideDownFade {
-        0% {
-            opacity: 0;
-            margin-top: -20px;
-        }
-
-        100% {
-            opacity: 1;
-            margin-top: 0;
-        }
-    }
-        </style>
     <section class="achievement" id="achievement">
         <div class="container">
             <div class="row mb-4">
@@ -935,292 +798,45 @@
                     </div>
 
                     <div class="tab-content text-center">
-                        <div role="tabpanel" class="tab-pane active" id="data1" data-aos="fade-right">
+                        <div role="tabpanel" class="tab-pane active" id="data1" data-aos="fade-right" style="overflow: scroll;height: 420px;">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Tingkatkan Produktifitas Dengan
-                                                Microsoft
-                                                Excel</h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#1"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="1">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_Excel_1.jpg">
-                                                </div>
-                                            <a href="#2"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan
-                                            </a>
-                                            <div class="overlay" id="2">
-                                                <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                <img src="img/sertifikat/SA_Excel_2.jpg">
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Learn HTML Concept For Programming
-                                            </h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#3"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="3">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_html_1.jpg">
-                                                </div>
-                                            <a href="#4"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="4">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_html_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Statistics Foundation For Data
-                                                Science </h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#5"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="5">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_dataScience_1.jpg">
-                                                </div>
-                                            <a href="#6"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="6">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_dataScience_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Programming Foundation For Data
-                                                Science</h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#7"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="7">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_dataScience2_1.jpg">
-                                                </div>
-                                            <a href="#8"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="8">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_dataScience2_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <script>
+                                sertifikat_1.forEach(function(obj) { 
+                                    document.write(
+                                    '<div class="col-sm-6"><div class="card"><div class="card-body"><h5 class="card-title bd-font">'+ obj.judul +'</h5> <p class="card-text text-muted">'+ obj.perusahaan +'</p><br> <a href="#'+obj.url_id+'" class="btn btn_me button_sertifikat form-control"> '+obj.button +'</a> <div class="overlay" id="'+obj.url_id+'"> <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a> <img src="'+obj.url_image+'"> </div> </div></div></div>'
+                                    ); 
+                                });
+                                </script>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="data2" data-aos="fade-right">
+                        <div role="tabpanel" class="tab-pane" id="data2" data-aos="fade-right" style="overflow: scroll;height: 420px;">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Kuasai TOEFL PBT, Raih Score 600+
-                                            </h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#9"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="9">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_toefl_1.jpg">
-                                                </div>
-                                            <a href="#10"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="10">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_toefl_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Mobile Programming Android & Kotlin
-                                            </h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#11"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="11">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_android_1.jpg">
-                                                </div>
-                                            <a href="#12"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="12">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_android_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Mastering Mobile Programming Android
-                                            </h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#13"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="13">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_android2_1.jpg">
-                                                </div>
-                                            <a href="#14"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="14">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_android2_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Pengenalan Artificial Inteligence
-                                                Untuk
-                                                Bisnis</h5>
-                                            <p class="card-text text-muted">Diselenggarakan oleh Skill Academy
-                                                By Ruang
-                                                Guru</p><br>
-                                            <a href="#15"
-                                                class="btn btn_me button_sertifikat">Sertifikat <br>
-                                                Penyelesaian</a>
-                                                <div class="overlay" id="15">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_ai_1.jpg">
-                                                </div>
-                                            <a href="#16"
-                                                class="btn btn_me2 button_sertifikat">Sertifikat <br>
-                                                Keunggulan</a>
-                                                <div class="overlay" id="16">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/SA_ai_2.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <script>
+                                    sertifikat_2.forEach(function(obj) { 
+                                        document.write(
+                                        '<div class="col-sm-6"><div class="card"><div class="card-body"><h5 class="card-title bd-font">'+ obj.judul +'</h5> <p class="card-text text-muted">'+ obj.perusahaan +'</p><br> <a href="#'+obj.url_id+'" class="btn btn_me button_sertifikat form-control"> '+obj.button +'</a> <div class="overlay" id="'+obj.url_id+'"> <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a> <img src="'+obj.url_image+'"> </div> </div></div></div>'
+                                        ); 
+                                    });
+                                    </script>
                             </div>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane" id="data3" data-aos="fade-right">
+                        <div role="tabpanel" class="tab-pane" id="data3" data-aos="fade-right" style="overflow: scroll;height: 420px;">
                             <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Full-Stack Website Designer</h5>
-                                            <p class="card-text text-muted">DiSelenggarakan oleh Buildwithangga
-                                                dan
-                                                Sandhika Galih</p><br>
-                                            <a href="#17"
-                                                class="btn btn_me button_sertifikat">Sertifikat</a>
-                                                <div class="overlay" id="17">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/bwa_webDesigner_1.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Seminar Nasional Informasi dan Teknologi
-                                            </h5>
-                                            <p class="card-text text-muted">Himpunan Mahasiswa Informatika Universitas Sebelas Maret
-                                            </p><br>
-                                            <a href="#18"
-                                                class="btn btn_me button_sertifikat">Sertifikat </a>
-                                                <div class="overlay" id="18">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/pingtest_it_1.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">Menggali Lebih dalam dunia IT untuk
-                                                Generasi
-                                                Z</h5>
-                                            <p class="card-text text-muted">DiSelenggarakan oleh LP3I Jakarta
-                                            </p><br>
-                                            <a href="#19"
-                                                class="btn btn_me button_sertifikat">Sertifikat </a>
-                                                <div class="overlay" id="19">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/lp3i_it_1.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title bd-font">How to Become Developer From Zero to Hero</h5>
-                                            <p class="card-text text-muted">DiSelenggarakan oleh DuniaCoding</p>
-                                            <br>
-                                            <a href="#20" class="btn btn_me button_sertifikat">Sertifikat
-                                                <br></a>
-                                                <div class="overlay" id="20">
-                                                    <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a>
-                                                    <img src="img/sertifikat/duniaCoding_it_1.jpg">
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <script>
+                                    sertifikat_3.forEach(function(obj) { 
+                                        document.write(
+                                        '<div class="col-sm-6"><div class="card"><div class="card-body"><h5 class="card-title bd-font">'+ obj.judul +'</h5> <p class="card-text text-muted">'+ obj.perusahaan +'</p><br> <a href="#'+obj.url_id+'" class="btn btn_me button_sertifikat form-control"> '+obj.button +'</a> <div class="overlay" id="'+obj.url_id+'"> <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a> <img src="'+obj.url_image+'"> </div> </div></div></div>'
+                                        ); 
+                                    });
+                                    </script>
                             </div>
                         </div>
 
                     </div>
                 </div><br><br>
     </section>
+<!-- akhir Achievement -->
 
 
     <!--Contact-->
@@ -1319,8 +935,8 @@
     </svg>
     <footer class="footer">
         <div class="container text-center pt-8">
-            <a href="#" title="Follow me on Facebook" class="home__social-icon-footer "><i
-                    class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.linkedin.com/in/jokiandrianto/" title="Follow me on Linkedin" 
+            class="home__social-icon-footer"><i class='bx bxl-linkedin-square'></i></a>
             <a href="https://www.instagram.com/joky_anryanto/" title="Follow me on Instagram"
                 class="home__social-icon-footer"><i class='bx bxl-instagram'></i></a>
             <a href="#" title="Follow me on Twitter" class="home__social-icon-footer"><i class='bx bxl-twitter'></i></a>
@@ -1484,75 +1100,6 @@
         }
     </script>
     <!-- akhir copyright -->
-
-    <style>
-        #darkmode {
-            background-color: rgb(49, 49, 49);
-            color: white;
-            transition: 0.5s;
-        }
-
-        #darkmode .mode_dark {
-            transition: 0.5s;
-            background-color: aqua;
-        }
-
-        #darkmode .mode_light {
-            background-color: unset;
-        }
-
-        #darkmode .mode_light:hover {
-            background-color: aqua;
-        }
-
-        #darkmode h2,
-        #darkmode h3,
-        #darkmode h5,
-        #darkmode p,
-        #darkmode a {
-            color: white;
-        }
-
-        #darkmode .education h5 {
-            color: black;
-        }
-
-        #darkmode .achievement h5 {
-            color: black;
-        }
-
-        #darkmode .kosong {
-            color: white;
-            border: 2px solid white;
-        }
-
-        #darkmode .nav .active {
-            color: black;
-        }
-
-        #darkmode .nav .active {
-            color: black;
-        }
-
-        #darkmode .contact a,
-        #darkmode .contact h5 {
-            color: white;
-        }
-
-        #darkmode .home__data a:hover {
-            background-color: black;
-        }
-
-        #darkmode .contact a:hover {
-            background-color: black;
-        }
-
-        #darkmode .home__social a:hover {
-            background-color: black;
-        }
-    </style>
-
-    <!-- dark mode -->
     <script>
         function setDarkMode(isDark) {
             if (isDark) {
