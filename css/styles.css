@@ -410,7 +410,7 @@
     /*=== buttons ====*/
     .button {
         display: inline-block;
-        background-color: var(--first-color);
+        background-color: aqua;
         /* color: var(--first-color-lighten); */
         color: black;
         border-style: solid;
@@ -437,7 +437,7 @@
     }
     .btn_me{
         background-color: aqua;
-        color: black;
+        color: black !important;
         font-weight: 600;
         border: 1px solid black;
         transition: 1s !important;
@@ -520,8 +520,7 @@
     .figure-img {
         position: relative;
         margin-top: 10px;
-        box-shadow: 2px 5px 7px 2px rgb(5,42,163);
-       
+        box-shadow: 2px 4px 4px 2px rgb(5,42,163);
     }
 
     .kosong {
@@ -637,7 +636,7 @@
 
         /*  */
 
-
+    
         .nav-item .active {
             text-decoration: underline !important;
             opacity: unset;
@@ -756,6 +755,7 @@
 
         .button_sertifikat {
             font-size: 15px;
+            color: black;
         }
 
         .gambar_h_about {
@@ -923,18 +923,18 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: rgb(5, 42, 163);
+            background: aqua;
             bottom: 40px;
             right: 50px;
             text-align: center;
-            color: #ffffff;
+            color: rgb(5, 42, 163);
+            border: 2px solid rgb(5, 42, 163);
         }
     
         .bxs-chevron-up-circle {
             margin-top: 1px;
             font-size: 40px;
             line-height: 50px;
-            color: rgb(240, 220, 107);;
         }
     
         /* akhir scroll ke atas */
@@ -982,7 +982,7 @@
     left: 50%;
     margin-left: -35px;
     text-decoration: none;
-    color: white;
+    color: black !important;
     opacity: 0;
 }
 
@@ -1029,8 +1029,12 @@
     color: white;
     transition: 0.5s;
 }
-#darkmode .vidio_karya, #darkmode .figure-img, #darkmode .skill_office_2, #darkmode .pendidikan_2 {
+#darkmode .vidio_karya, #darkmode .skill_office_2, #darkmode .pendidikan_2 {
     box-shadow: 2px 5px 7px 2px rgb(255, 255, 255);
+}
+
+#darkmode .figure-img {
+    box-shadow: 2px 4px 4px 2px rgb(255, 255, 255);
 }
 
 
@@ -1054,6 +1058,11 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+#darkmode .up-icon {
+    background: rgb(5,42,163);
+    color: aqua;
+    border: 2px solid aqua;
+}
 
 #darkmode h2,
 #darkmode h3,
@@ -1063,8 +1072,8 @@
     color: white;
 }
 
-#darkmode .education h5 {
-    color: black;
+#darkmode .education h5, #darkmode .button-light {
+    color: black !important;
 }
 #darkmode .btn_me{
     color: black;
@@ -1103,4 +1112,9 @@
 #darkmode .home__social a:hover {
     background-color: black;
 }
-/* akhir dark mode */
+
+#darkmode .button-light:hover {
+    color: white !important;
+}
+
+/* akhir dark mode */ 
