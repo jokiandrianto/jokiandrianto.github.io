@@ -94,7 +94,7 @@
             "button": "View Certificate",
             "kategori": "Online Course",
             "tahun": "2022",
-            "url_image": "img/sertifikat/dicoding_frontendSedang.jpg"
+            "url_image": "img/sertifikat/dicoding_dasarGit.jpg"
         },
         {
             "url_id" : "11", 
