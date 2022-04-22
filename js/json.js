@@ -1,6 +1,24 @@
     // sertifikat 1
     var sertifikat_1 = [
         {
+            "url_id" : "18", 
+            "judul"   : "Web Development Bootcamp",
+            "perusahaan" : "Hosted by Codekaro",
+            "button": "View Certificate",
+            "kategori": "Bootcamp",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/codekaro.png"
+        },
+        {
+            "url_id" : "4", 
+            "judul"   : "Responsive Web Design",
+            "perusahaan" : "Hosted by freeCodeCamp",
+            "button": "View Certificate",
+            "kategori": "Bootcamp",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/fCC_webDesign.png"
+        },
+        {
             "url_id" : "1", 
             "judul"   : "Learn HTML Concept For Programming",
             "perusahaan" : "Hosted by Skill Academy By Ruang Guru",
@@ -28,15 +46,6 @@
             "url_image": "img/sertifikat/dicoding_dasarJS.jpg"
         },
         {
-            "url_id" : "4", 
-            "judul"   : "Responsive Web Design",
-            "perusahaan" : "Hosted by freeCodeCamp",
-            "button": "View Certificate",
-            "kategori": "Online Course",
-            "tahun": "2022",
-            "url_image": "img/sertifikat/fCC_webDesign.png"
-        },
-        {
             "url_id" : "5", 
             "judul"   : "Tingkatkan Produktifitas Dengan Microsoft Excel",
             "perusahaan" : "Hosted by Skill Academy By Ruang Guru",
@@ -53,7 +62,17 @@
             "kategori": "Online Course",
             "tahun": "2020",
             "url_image": "img/sertifikat/SA_toefl.jpg"
-        }
+        },
+        {
+            "url_id" : "9", 
+            "judul"   : "Belajar Membuat Front-End Web untuk Pemula",
+            "perusahaan" : "Hosted by Dicoding",
+            "button": "View Certificate",
+            "kategori": "Online Course",
+            "tahun": "2021",
+            "url_image": "img/sertifikat/dicoding_frontendPemula.jpg"
+        },
+        
     
     ];
     // akhir sertifikat 1
@@ -78,15 +97,7 @@
             "tahun": "2020",
             "url_image": "img/sertifikat/SA_dataScience2_1.jpg"
         },
-        {
-            "url_id" : "9", 
-            "judul"   : "Belajar Membuat Front-End Web untuk Pemula",
-            "perusahaan" : "Hosted by Dicoding",
-            "button": "View Certificate",
-            "kategori": "Online Course",
-            "tahun": "2021",
-            "url_image": "img/sertifikat/dicoding_frontendPemula.jpg"
-        },
+
         {
             "url_id" : "10", 
             "judul"   : "Belajar Dasar Git dengan GitHub",
@@ -94,7 +105,7 @@
             "button": "View Certificate",
             "kategori": "Online Course",
             "tahun": "2022",
-            "url_image": "img/sertifikat/dicoding_dasarGit.jpg"
+            "url_image": "img/sertifikat/dicoding_frontendSedang.jpg"
         },
         {
             "url_id" : "11", 
@@ -113,13 +124,7 @@
             "kategori": "Online Course",
             "tahun": "2020",
             "url_image": "img/sertifikat/SA_android2_1.jpg"
-        }
-    
-    ];
-    // akhir sertifikat 2
-    
-    // sertifikat 3
-    var sertifikat_3 = [
+        },
         {
             "url_id" : "13", 
             "judul"   : "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
@@ -139,11 +144,27 @@
             "url_image": "img/sertifikat/SA_AI.jpg"
         },
         {
+            "url_id" : "19", 
+            "judul"   : "Minset yang tepat saat melamar kerja",
+            "perusahaan" : "Hosted by LP3I & LOTUP",
+            "button": "View Certificate",
+            "kategori": "Webinar",
+            "tahun": "2021",
+            "url_image": "img/sertifikat/Seminar_LP3I_MelamarKerja.jpg"
+        },
+    
+    ];
+    // akhir sertifikat 2
+    
+    // sertifikat 3
+    var sertifikat_3 = [
+
+        {
             "url_id" : "15", 
             "judul"   : "How to Become Developer From Zero to Hero",
             "perusahaan" : "Hosted by DuniaCoding",
             "button": "View Certificate",
-            "kategori": "Seminar",
+            "kategori": "Webinar",
             "tahun": "2021",
             "url_image": "img/sertifikat/duniaCoding_it_1.jpg"
         },
@@ -157,17 +178,95 @@
             "url_image": "img/sertifikat/pingtest_it_1.jpg"
         },
         {
-            "url_id" : "17", 
-            "judul"   : "Menggali Lebih dalam dunia IT untuk Generasi Z",
-            "perusahaan" : "Hosted by LP3I Jakarta",
+            "url_id" : "20", 
+            "judul"   : "Baparekraf Developer Day 2022",
+            "perusahaan" : "Hosted by Dicoding",
             "button": "View Certificate",
-            "kategori": "Seminar",
-            "tahun": "2020",
-            "url_image": "img/sertifikat/lp3i_it_1.jpg"
-        }
+            "kategori": "Webinar",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/dicoding_bdd_webinar.jpg"
+        },
+        {
+            "url_id" : "21", 
+            "judul"   : "Networking dan Security di AWS",
+            "perusahaan" : "Hosted by Dicoding & AWS",
+            "button": "View Certificate",
+            "kategori": "Webinar",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/Webinar_DICODING_SecurityAWS.jpg"
+        },
+        {
+            "url_id" : "22", 
+            "judul"   : "Web Developer From Zero to Hero",
+            "perusahaan" : "Hosted by Dicoding",
+            "button": "View Certificate",
+            "kategori": "Webinar",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/Webinar_DICODING_WebDeveloper.jpg"
+        },
+        {
+            "url_id" : "23", 
+            "judul"   : "Get to Know about CV & Linkedln",
+            "perusahaan" : "Hosted by LP3I Sudirman",
+            "button": "View Certificate",
+            "kategori": "Training",
+            "tahun": "2021",
+            "url_image": "img/sertifikat/Training_LP3I_CV&Linkedin.jpg"
+        },
+        {
+            "url_id" : "24", 
+            "judul"   : "Problem solving and critical thinking",
+            "perusahaan" : "Hosted by LP3I Sudirman",
+            "button": "View Certificate",
+            "kategori": "Training",
+            "tahun": "2021",
+            "url_image": "img/sertifikat/Training_LP3I_ProblemSolving.jpg"
+        },
+        {
+            "url_id" : "25", 
+            "judul"   : "Public Speaking & Presentation",
+            "perusahaan" : "Hosted by LP3I Sudirman",
+            "button": "View Certificate",
+            "kategori": "Training",
+            "tahun": "2021",
+            "url_image": "img/sertifikat/Training_LP3I_PublicSpeaking.jpg"
+        },
     
     ];
     // akhir sertifikat 3
+
+// sertifikat 4
+var sertifikat_4 = [
+    {
+        "url_id" : "26", 
+        "judul"   : "Teamwork Building",
+        "perusahaan" : "Hosted by LP3I Sudirman",
+        "button": "View Certificate",
+        "kategori": "Training",
+        "tahun": "2021",
+        "url_image": "img/sertifikat/Training_LP3I_TeamworkBuilding.jpg"
+    },
+    {
+        "url_id" : "17", 
+        "judul"   : "Menggali Lebih dalam dunia IT untuk Generasi Z",
+        "perusahaan" : "Hosted by LP3I Jakarta",
+        "button": "View Certificate",
+        "kategori": "Workshop",
+        "tahun": "2020",
+        "url_image": "img/sertifikat/Workshop_LP3I_ITgenarisiZ.jpg"
+    },
+    {
+        "url_id" : "27", 
+        "judul"   : "Belajar Dasar-Dasar Edit Foto ala Influencer",
+        "perusahaan" : "Hosted by LP3I Jakarta",
+        "button": "View Certificate",
+        "kategori": "Workshop",
+        "tahun": "2020",
+        "url_image": "img/sertifikat/Workshop_LP3I_EditFoto.jpg"
+    },
+];
+
+// akhir sertifikat 4
 
 
 
