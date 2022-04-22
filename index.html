@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>My Portfolio</title>
+    <title>Portfolio | Joki Andrianto</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -109,11 +109,11 @@
                 <div class="col">
                     <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bx-info-circle'></i>About</b></h2>
                     <hr>
-                    <p class="text-center">
+                    <!-- <p class="text-center">
                         <marquee style="width: 250px; font-family: monospace;font-size: 20px;"> Hello! Welcome to my
                             simple web
                         </marquee>
-                    </p>
+                    </p> -->
                 </div>
             </div>
             <div class="row">
@@ -803,6 +803,10 @@
                                 <a href="#data3" class="btn nav-link achievement_tab" role="tab"
                                     data-toggle="tab"><b>Part 3</b></a>
                             </li>
+                            <li class="nav-item">
+                                <a href="#data4" class="btn nav-link achievement_tab" role="tab"
+                                    data-toggle="tab"><b>Part 4</b></a>
+                            </li>
 
                         </ul>
                     </div>
@@ -835,6 +839,18 @@
                             <div class="row">
                                 <script>
                                     sertifikat_3.forEach(function(obj) { 
+                                        document.write(
+                                        '<div class="col-sm-6"><div class="card"><div class="card-body"><h5 class="card-title bd-font">'+ obj.judul +'</h5> <p class="card-text text-muted">'+ obj.perusahaan +'</p><div class="row text-center text-muted"><div class="col-12 pb-2">'+ obj.kategori +'</div></div> <a href="#'+obj.url_id+'" class="btn btn_me button_sertifikat form-control"> '+obj.button +'</a> <div class="overlay" id="'+obj.url_id+'"> <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a> <img src="'+obj.url_image+'"> </div> </div></div></div>'
+                                        ); 
+                                    });
+                                    </script>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="data4" data-aos="fade-right" style="overflow: scroll;height: 420px;">
+                            <div class="row">
+                                <script>
+                                    sertifikat_4.forEach(function(obj) { 
                                         document.write(
                                         '<div class="col-sm-6"><div class="card"><div class="card-body"><h5 class="card-title bd-font">'+ obj.judul +'</h5> <p class="card-text text-muted">'+ obj.perusahaan +'</p><div class="row text-center text-muted"><div class="col-12 pb-2">'+ obj.kategori +'</div></div> <a href="#'+obj.url_id+'" class="btn btn_me button_sertifikat form-control"> '+obj.button +'</a> <div class="overlay" id="'+obj.url_id+'"> <a href="#achievement" class="close btn btn_me button_sertifikat">X Close</a> <img src="'+obj.url_image+'"> </div> </div></div></div>'
                                         ); 
