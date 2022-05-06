@@ -273,6 +273,7 @@ input:invalid{
         text-decoration: underline;
         background-color: black;
         color: white;
+        font-size: 20px;
         border-radius: 10px;
         opacity: unset;
     }
@@ -595,7 +596,7 @@ input:invalid{
 
     .nav_kategori {
         transition: 1s;
-        font-size: 10px;
+        font-size: 9px;
         color: black;
         font-weight: bold;
         font-family: serif;
