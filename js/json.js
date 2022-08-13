@@ -75,9 +75,9 @@
         
     
     ];
-    // akhir sertifikat 1
+    // akhir sertifikat part 1
     
-    // sertifikat 2
+    // sertifikat part 2
     var sertifikat_2 = [
         {
             "url_id" : "7", 
@@ -144,6 +144,30 @@
             "url_image": "img/sertifikat/SA_AI.jpg"
         },
         {
+            "url_id" : "25", 
+            "judul"   : "HTML",
+            "perusahaan" : "Hosted by SOLOLEARN",
+            "button": "View Certificate",
+            "kategori": "Online Course",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/soloLearn_html.png"
+        }
+    
+    ];
+    // akhir sertifikat 2
+    
+    // sertifikat 3
+    var sertifikat_3 = [
+        {
+            "url_id" : "28", 
+            "judul"   : "CSS",
+            "perusahaan" : "Hosted by SOLOLEARN",
+            "button": "View Certificate",
+            "kategori": "Online Course",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/soloLearn_css.png"
+        },
+        {
             "url_id" : "19", 
             "judul"   : "Minset yang tepat saat melamar kerja",
             "perusahaan" : "Hosted by LP3I & LOTUP",
@@ -152,13 +176,6 @@
             "tahun": "2021",
             "url_image": "img/sertifikat/Seminar_LP3I_MelamarKerja.jpg"
         },
-    
-    ];
-    // akhir sertifikat 2
-    
-    // sertifikat 3
-    var sertifikat_3 = [
-
         {
             "url_id" : "15", 
             "judul"   : "How to Become Developer From Zero to Hero",
@@ -212,25 +229,7 @@
             "kategori": "Training",
             "tahun": "2021",
             "url_image": "img/sertifikat/Training_LP3I_CV&Linkedin.jpg"
-        },
-        {
-            "url_id" : "24", 
-            "judul"   : "Problem solving and critical thinking",
-            "perusahaan" : "Hosted by LP3I Sudirman",
-            "button": "View Certificate",
-            "kategori": "Training",
-            "tahun": "2021",
-            "url_image": "img/sertifikat/Training_LP3I_ProblemSolving.jpg"
-        },
-        {
-            "url_id" : "25", 
-            "judul"   : "Public Speaking & Presentation",
-            "perusahaan" : "Hosted by LP3I Sudirman",
-            "button": "View Certificate",
-            "kategori": "Training",
-            "tahun": "2021",
-            "url_image": "img/sertifikat/Training_LP3I_PublicSpeaking.jpg"
-        },
+        }
     
     ];
     // akhir sertifikat 3
@@ -263,7 +262,25 @@ var sertifikat_4 = [
         "kategori": "Workshop",
         "tahun": "2020",
         "url_image": "img/sertifikat/Workshop_LP3I_EditFoto.jpg"
+    },        {
+        "url_id" : "24", 
+        "judul"   : "Problem solving and critical thinking",
+        "perusahaan" : "Hosted by LP3I Sudirman",
+        "button": "View Certificate",
+        "kategori": "Training",
+        "tahun": "2021",
+        "url_image": "img/sertifikat/Training_LP3I_ProblemSolving.jpg"
     },
+    {
+        "url_id" : "29", 
+        "judul"   : "Public Speaking & Presentation",
+        "perusahaan" : "Hosted by LP3I Sudirman",
+        "button": "View Certificate",
+        "kategori": "Training",
+        "tahun": "2021",
+        "url_image": "img/sertifikat/Training_LP3I_PublicSpeaking.jpg"
+    }
+
 ];
 
 // akhir sertifikat 4
@@ -273,7 +290,19 @@ var sertifikat_4 = [
 // Skill 1
 var skill_1 = [
     {
-        "nama_skill" : "PHP", 
+        "nama_skill" : "HTML", 
+        "proses_skill"   : "80%"
+    },
+    {
+        "nama_skill" : "CSS (Native, Bootstrap)", 
+        "proses_skill"   : "80%"
+    },
+    {
+        "nama_skill" : "JavaScript (Native, Node JS)", 
+        "proses_skill"   : "50%"
+    },
+    {
+        "nama_skill" : "PHP (Native, CI4, YII2)", 
         "proses_skill"   : "60%"
     },
     {
@@ -281,28 +310,16 @@ var skill_1 = [
         "proses_skill"   : "60%"
     },
     {
-        "nama_skill" : "HTML", 
+        "nama_skill" : "UML Diagram", 
+        "proses_skill"   : "80%"
+    },
+    {
+        "nama_skill" : "Design (Figma, Adobe XD)", 
         "proses_skill"   : "70%"
     },
     {
-        "nama_skill" : "Figma", 
-        "proses_skill"   : "50%"
-    },
-    {
-        "nama_skill" : "CSS", 
+        "nama_skill" : "IBM AS400", 
         "proses_skill"   : "70%"
-    },
-    {
-        "nama_skill" : "Corel Draw", 
-        "proses_skill"   : "50%"
-    },
-    {
-        "nama_skill" : "JavaScript", 
-        "proses_skill"   : "50%"
-    },
-    {
-        "nama_skill" : "Photoshop", 
-        "proses_skill"   : "50%"
     },
 ];
 // AKHIR Skill 1
