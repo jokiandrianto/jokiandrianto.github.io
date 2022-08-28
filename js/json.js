@@ -105,7 +105,7 @@
             "button": "View Certificate",
             "kategori": "Online Course",
             "tahun": "2022",
-            "url_image": "img/sertifikat/dicoding_frontendSedang.jpg"
+            "url_image": "img/sertifikat/dicoding_dasarGit.jpg"
         },
         {
             "url_id" : "11", 
@@ -298,7 +298,7 @@ var skill_1 = [
         "proses_skill"   : "80%"
     },
     {
-        "nama_skill" : "JavaScript (Native, Node JS)", 
+        "nama_skill" : "JavaScript (Native, DOM, Node JS)", 
         "proses_skill"   : "50%"
     },
     {
@@ -306,7 +306,11 @@ var skill_1 = [
         "proses_skill"   : "60%"
     },
     {
-        "nama_skill" : "MySql", 
+        "nama_skill" : "MySql(PHPMyAdmin, SQLyog)", 
+        "proses_skill"   : "60%"
+    },
+    {
+        "nama_skill" : "Sql (MC Sql Server)", 
         "proses_skill"   : "60%"
     },
     {
@@ -320,6 +324,18 @@ var skill_1 = [
     {
         "nama_skill" : "IBM AS400", 
         "proses_skill"   : "70%"
+    },
+    {
+        "nama_skill" : "Rest API", 
+        "proses_skill"   : "70%"
+    },
+    {
+        "nama_skill" : "GIT & GITHUB", 
+        "proses_skill"   : "70%"
+    },
+    {
+        "nama_skill" : "CMS (WordPress, Joomla)", 
+        "proses_skill"   : "80%"
     },
 ];
 // AKHIR Skill 1
