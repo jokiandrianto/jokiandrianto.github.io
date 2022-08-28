@@ -135,6 +135,16 @@ input:invalid{
         color: #000;
     }
 
+/*  */
+.judul_sertifikat{
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 1; /* number of lines to show */
+-webkit-box-orient: vertical;
+}
+/*  */
+
 
 
     /*=== class css ====*/
@@ -181,10 +191,10 @@ input:invalid{
         font-family: Georgia, 'Times New Roman', Times, serif;
     } */
     .sub_judul{
-        color: #00FFFF;
-        -webkit-text-stroke: 0.4px black;
+        color: #4B6587;
+        /* -webkit-text-stroke: 0.4px black; */
         font-weight: bold;
-        text-shadow: 3px -2px 1px #4B6587;
+        text-shadow: 3px -2px 1px #00FFFF;
     }
 
 
@@ -303,7 +313,7 @@ input:invalid{
     }
 
     .nav__link:hover {
-        color: var(--first-color-light);
+        color: aqua;
     }
 
     .nav__logo,
@@ -369,7 +379,7 @@ input:invalid{
     .home__greeting {
         /* font-size: .913rem; */
         font-size: 20px;
-        -webkit-text-stroke: 0.5px black;
+        /* -webkit-text-stroke: 0.5px black; */
         /* color: #000; */
         color: white;
         
@@ -483,13 +493,16 @@ input:invalid{
         color: #4B6587;
         font-weight: bold;
         border: 2px solid #4B6587;
-        box-shadow: 0px 0px 5px #F0E5CF;
-        transition: 1s !important;
+        box-shadow: 0px 0px 6px #4B6587;
+        transition: .5s !important;
     }
     .btn_me:hover{
         background-color: white;
         color: black;
         border-radius: 30px;
+        background-color: #4B6587;
+        color: #00FFFF;
+        box-shadow: unset;
     }
     .btn-warning{
         background-color: #F0E5CF !important;
@@ -822,14 +835,14 @@ input:invalid{
         .font__skill {
             font-size: 20px;
             color: white;
-            -webkit-text-stroke: 0.2px black;
+            /* -webkit-text-stroke: 0.2px black; */
         }
 
         .font__skill_2 {
             margin-top: unset;
             font-size: 20px;
             color: white;
-            -webkit-text-stroke: 0.2px black;
+            /* -webkit-text-stroke: 0.2px black; */
             /* font-family: Georgia, 'Times New Roman', Times, serif; */
         }
 
@@ -1177,7 +1190,10 @@ input:invalid{
     color: black !important;
 }
 #darkmode .btn_me{
-    color: #4B6587;
+    color: aqua;
+}
+#darkmode .btn_me:hover{
+    color: aqua;
 }
 
 #darkmode .achievement h5 {
