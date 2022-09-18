@@ -1,6 +1,15 @@
     // sertifikat 1
     var sertifikat_1 = [
         {
+            "url_id" : "9", 
+            "judul"   : "Lulusan Terbaik Program Studi Manajemen Informatika",
+            "perusahaan" : "Hosted by LP3I Sudirman",
+            "button": "View Certificate",
+            "kategori": "Certificate of Merit",
+            "tahun": "2022",
+            "url_image": "img/Sertifikat_LulusanTerbaik_MI_LP3I.jpg"
+        },
+        {
             "url_id" : "18", 
             "judul"   : "Web Development Bootcamp",
             "perusahaan" : "Hosted by Codekaro",
@@ -63,8 +72,14 @@
             "tahun": "2020",
             "url_image": "img/sertifikat/SA_toefl.jpg"
         },
+    
+    ];
+    // akhir sertifikat part 1
+    
+    // sertifikat part 2
+    var sertifikat_2 = [
         {
-            "url_id" : "9", 
+            "url_id" : "25", 
             "judul"   : "Belajar Membuat Front-End Web untuk Pemula",
             "perusahaan" : "Hosted by Dicoding",
             "button": "View Certificate",
@@ -72,13 +87,6 @@
             "tahun": "2021",
             "url_image": "img/sertifikat/dicoding_frontendPemula.jpg"
         },
-        
-    
-    ];
-    // akhir sertifikat part 1
-    
-    // sertifikat part 2
-    var sertifikat_2 = [
         {
             "url_id" : "7", 
             "judul"   : "Statistics Foundation For Data Science",
@@ -143,21 +151,21 @@
             "tahun": "2020",
             "url_image": "img/sertifikat/SA_AI.jpg"
         },
-        {
-            "url_id" : "25", 
-            "judul"   : "HTML",
-            "perusahaan" : "Hosted by SOLOLEARN",
-            "button": "View Certificate",
-            "kategori": "Online Course",
-            "tahun": "2022",
-            "url_image": "img/sertifikat/soloLearn_html.png"
-        }
     
     ];
     // akhir sertifikat 2
     
     // sertifikat 3
     var sertifikat_3 = [
+        {
+            "url_id" : "23", 
+            "judul"   : "HTML",
+            "perusahaan" : "Hosted by SOLOLEARN",
+            "button": "View Certificate",
+            "kategori": "Online Course",
+            "tahun": "2022",
+            "url_image": "img/sertifikat/soloLearn_html.png"
+        },
         {
             "url_id" : "28", 
             "judul"   : "CSS",
@@ -221,21 +229,22 @@
             "tahun": "2022",
             "url_image": "img/sertifikat/Webinar_DICODING_WebDeveloper.jpg"
         },
-        {
-            "url_id" : "23", 
-            "judul"   : "Get to Know about CV & Linkedln",
-            "perusahaan" : "Hosted by LP3I Sudirman",
-            "button": "View Certificate",
-            "kategori": "Training",
-            "tahun": "2021",
-            "url_image": "img/sertifikat/Training_LP3I_CV&Linkedin.jpg"
-        }
+
     
     ];
     // akhir sertifikat 3
 
 // sertifikat 4
 var sertifikat_4 = [
+    {
+        "url_id" : "29", 
+        "judul"   : "Get to Know about CV & Linkedln",
+        "perusahaan" : "Hosted by LP3I Sudirman",
+        "button": "View Certificate",
+        "kategori": "Training",
+        "tahun": "2021",
+        "url_image": "img/sertifikat/Training_LP3I_CV&Linkedin.jpg"
+    },
     {
         "url_id" : "26", 
         "judul"   : "Teamwork Building",
@@ -272,14 +281,15 @@ var sertifikat_4 = [
         "url_image": "img/sertifikat/Training_LP3I_ProblemSolving.jpg"
     },
     {
-        "url_id" : "29", 
+        "url_id" : "30", 
         "judul"   : "Public Speaking & Presentation",
         "perusahaan" : "Hosted by LP3I Sudirman",
         "button": "View Certificate",
         "kategori": "Training",
         "tahun": "2021",
         "url_image": "img/sertifikat/Training_LP3I_PublicSpeaking.jpg"
-    }
+    },
+
 
 ];
 
