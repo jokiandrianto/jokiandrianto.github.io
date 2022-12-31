@@ -870,6 +870,7 @@ display: -webkit-box;
     .achievement hr,
     .contact hr,
     .hobi hr,
+    .kerja hr,
     .karya hr,
     .youtube hr {
         width: 300px;
@@ -1104,14 +1105,13 @@ display: -webkit-box;
 .div_kerja h5:hover,.div_kerja h6:hover,.div_kerja p:hover{
     text-shadow: 2px 4px 4px grey;
 }
-.garis_samping_q{
-    border: 3px solid #4B6587;height: 80px;margin-top: 23px;border-top: 5px solid aqua;border-bottom: 5px solid aqua;border-radius: 20px;transition: 1s;
-}
-.garis_samping_q:hover{
-    box-shadow: 2px 4px 4px 2px grey;
-}
+
 .gambar_q{
     box-shadow: 4px 6px 5px 1px #4B6587;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
     transition: 1s;
 }
 .gambar_q:hover{
@@ -1139,8 +1139,12 @@ display: -webkit-box;
 }
 
 
-#darkmode .vidio_karya, #darkmode .skill_office_2, #darkmode .pendidikan_2,#darkmode .gambar_q,#darkmode .gambar_education {
+#darkmode .vidio_karya, #darkmode .skill_office_2, #darkmode .pendidikan_2,#darkmode .gambar_education {
     box-shadow:  4px 6px 5px 1px rgb(125, 125, 125);
+}
+#darkmode .gambar_q{
+    box-shadow:  4px 6px 5px 1px rgb(125, 125, 125);
+    padding: unset;
 }
 
 #darkmode .figure-img {
