@@ -397,9 +397,9 @@ display: -webkit-box;
     }
     
     .home__img img{
-        height: 350px;
+        height: 300px;
         /* border-radius: 50%; */
-        width: 400px;
+        width: 300px;
         transition: 0.4s;
         /* margin-bottom: 50px; */
         /* box-shadow: 2px 4px 4px 2px #4B6587 !important; */
