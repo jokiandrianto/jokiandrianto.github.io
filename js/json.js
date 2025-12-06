@@ -34,6 +34,7 @@
             "button": "View Certificate",
             "kategori": "Online Course",
             "tahun": "2020",
+            // "url_image": "https://drive.google.com/file/d/1QOStP-px9DkZuU5HRayx8xF0c3Q_48a3/preview"
             "url_image": "img/sertifikat/SA_html.jpg"
         },
         {
@@ -301,35 +302,35 @@ var sertifikat_4 = [
 var skill_1 = [
     {
         "nama_skill" : "HTML", 
-        "proses_skill"   : "80%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "CSS (Native, Bootstrap)", 
-        "proses_skill"   : "80%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "JavaScript (Native, DOM, Node JS)", 
-        "proses_skill"   : "50%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "PHP (Native, CI4, YII2)", 
-        "proses_skill"   : "60%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "MySql(PHPMyAdmin, SQLyog)", 
-        "proses_skill"   : "60%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "Sql (MC Sql Server)", 
-        "proses_skill"   : "60%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "UML Diagram", 
-        "proses_skill"   : "80%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "Design (Figma, Adobe XD)", 
-        "proses_skill"   : "70%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "IBM AS400", 
@@ -337,15 +338,15 @@ var skill_1 = [
     },
     {
         "nama_skill" : "Rest API", 
-        "proses_skill"   : "70%"
+        "proses_skill"   : "80%"
     },
     {
         "nama_skill" : "GIT & GITHUB", 
-        "proses_skill"   : "70%"
+        "proses_skill"   : "95%"
     },
     {
         "nama_skill" : "CMS (WordPress, Joomla)", 
-        "proses_skill"   : "80%"
+        "proses_skill"   : "95%"
     },
 ];
 // AKHIR Skill 1
