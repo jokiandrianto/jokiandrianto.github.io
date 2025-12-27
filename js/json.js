@@ -24,7 +24,7 @@ var sertifikat_1 = [
     perusahaan: "Hosted by Certiport",
     button: "View Certificate",
     kategori: "Certificate of Merit",
-    tahun: "2022",
+    tahun: "2024",
     url_image: "img/sertifikat/SoftwareDevelopment.jpg",
   },
   {
@@ -42,7 +42,7 @@ var sertifikat_1 = [
     perusahaan: "Hosted by Codekaro",
     button: "View Certificate",
     kategori: "Bootcamp",
-    tahun: "2022",
+    tahun: "2024",
     url_image: "img/sertifikat/codekaro.png",
   },
   {
@@ -370,3 +370,4 @@ var skill_1 = [
   },
 ];
 // AKHIR Skill 1
+
