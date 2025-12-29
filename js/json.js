@@ -33,7 +33,7 @@ var sertifikat_1 = [
     perusahaan: "Hosted by Global Institute of Technology and Business",
     button: "View Certificate",
     kategori: "Certificate of Merit",
-    tahun: "2022",
+    tahun: "2024",
     url_image: "img/sertifikat/TOEIC.jpg",
   },
   {
@@ -42,7 +42,7 @@ var sertifikat_1 = [
     perusahaan: "Hosted by Codekaro",
     button: "View Certificate",
     kategori: "Bootcamp",
-    tahun: "2024",
+    tahun: "2022",
     url_image: "img/sertifikat/codekaro.png",
   },
   {
@@ -329,7 +329,7 @@ var skill_1 = [
     proses_skill: "95%",
   },
   {
-    nama_skill: "JavaScript (Native, DOM, Node JS)",
+    nama_skill: "JavaScript (ES6+, DOM)",
     proses_skill: "95%",
   },
   {
@@ -337,7 +337,23 @@ var skill_1 = [
     proses_skill: "95%",
   },
   {
-    nama_skill: "MySql(PHPMyAdmin, SQLyog)",
+    nama_skill: "Node.js (Native, Express.js)",
+    proses_skill: "90%",
+  },
+  {
+    nama_skill: "Vue.js",
+    proses_skill: "90%",
+  },
+  {
+    nama_skill: "Golang",
+    proses_skill: "90%",
+  },
+  {
+    nama_skill: "MongoDB",
+    proses_skill: "95%",
+  },
+  {
+    nama_skill: "MySql(PHPMyAdmin, Adminer)",
     proses_skill: "95%",
   },
   {
@@ -370,4 +386,3 @@ var skill_1 = [
   },
 ];
 // AKHIR Skill 1
-
