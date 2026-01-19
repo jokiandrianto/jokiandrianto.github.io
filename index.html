@@ -38,7 +38,21 @@
 
 <!-- <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"> -->
 
-<body>
+<body class="loading">
+
+<div id="loader3d">
+    <canvas id="particles"></canvas>
+
+    <div class="loader-center">
+        <div class="cube" id="cube">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="percent" id="percent">0%</div>
+        <div class="status" id="status">Initializing...</div>
+    </div>
+</div>
 
     <!--header-->
     <section id="home_nav">
@@ -1467,3 +1481,4 @@
 </body>
 
 </html>
+
