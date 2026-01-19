@@ -1311,3 +1311,91 @@ h2 {
 }
 
 /* akhir dark mode */
+
+
+
+
+/* loading  */
+
+html,body{
+    margin:0;
+    height:100%;
+}
+
+body.loading{
+    /* overflow:hidden; */
+}
+
+#loader3d{
+    position:fixed;
+    inset:0;
+    z-index:999999;
+    background:radial-gradient(circle at top,#e0f2fe,#f8fafc);
+    overflow:hidden;
+}
+
+canvas{
+    position:absolute;
+    inset:0;
+}
+
+.loader-center{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.cube{
+    width:90px;
+    height:90px;
+    position:relative;
+    transform-style:preserve-3d;
+    animation:spinSlow 6s linear infinite;
+}
+
+.cube span{
+    position:absolute;
+    width:90px;
+    height:90px;
+    background:rgba(14,165,233,.8);
+    box-shadow:0 0 20px rgba(14,165,233,.8);
+}
+
+.cube span:nth-child(1){transform:rotateY(0deg) translateZ(45px);}
+.cube span:nth-child(2){transform:rotateY(90deg) translateZ(45px);}
+.cube span:nth-child(3){transform:rotateY(180deg) translateZ(45px);}
+.cube span:nth-child(4){transform:rotateY(-90deg) translateZ(45px);}
+.cube span:nth-child(5){transform:rotateX(90deg) translateZ(45px);}
+.cube span:nth-child(6){transform:rotateX(-90deg) translateZ(45px);}
+
+@keyframes spinSlow{
+    from{transform:rotateX(0) rotateY(0);}
+    to{transform:rotateX(360deg) rotateY(360deg);}
+}
+
+@keyframes spinFast{
+    from{transform:rotateX(0) rotateY(0);}
+    to{transform:rotateX(720deg) rotateY(720deg);}
+}
+
+.percent{
+    margin-top:20px;
+    font-size:32px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.status{
+    font-size:14px;
+    opacity:.7;
+}
+
+#content{
+    visibility:hidden;
+}
+
