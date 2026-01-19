@@ -1318,8 +1318,8 @@ h2 {
 /* loading  */
 
 html,body{
-    margin:0;
-    height:100%;
+    /* margin:0;
+    height:100%; */
 }
 
 body.loading{
@@ -1398,4 +1398,5 @@ canvas{
 #content{
     visibility:hidden;
 }
+
 
