@@ -1,37 +1,1483 @@
-<!DOCTYPE html>
-<html lang="id">
+               </div><!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Website Dipindahkan</title>
-  <meta http-equiv="refresh" content="5;url=https://jokiandrianto.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #020617;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    h1 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-    p {
-      opacity: 0.85;
-    }
-  </style>
+
+    <title>Portfolio | Joki Andrianto</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skill.css">
+
+
+    <!--box icons-->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> -->
+    <!-- <link href="css/boxicons/boxicons.min.css" rel='stylesheet'> -->
+
+    <!-- <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.css" rel='stylesheet'> -->
+    <link href="css/boxicons/boxicons.min.css" rel='stylesheet'>
+
+    <!--aos-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="css/dataaos/aos.css">
+
+    <!-- data sertifikat -->
+    <script type="text/javascript" src="js/json.js"></script>
+
 </head>
-<body>
-  <div>
-    <h1>Info website sudah beralih</h1>
-    <p>Anda akan dialihkan ke</p>
-    <p><strong>jokiandrianto.com</strong></p>
-    <p style="margin-top:15px;font-size:13px;">Mengalihkan otomatis...</p>
-  </div>
+
+
+
+<!-- <body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;"> -->
+
+<body class="loading">
+
+<div id="loader3d">
+    <canvas id="particles"></canvas>
+
+    <div class="loader-center">
+        <div class="cube" id="cube">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="percent" id="percent">0%</div>
+        <div class="status" id="status">Initializing...</div>
+    </div>
+</div>
+
+    <!--header-->
+    <section id="home_nav">
+
+        <header class="header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo link"><b>Joki Andrianto</b></a>
+                <div class="col">
+                    <div class="btn-group" role="group" aria-label="Basic example" style="border: 2px solid black;background-color: #4B6587;border-radius: 50px; box-shadow: 0 2px 2px 2px whitesmoke;">
+                        <span class="icon btn btn-outline-dark mode_light" onclick="setDarkMode(false)"><i class='bx bxs-sun'></i></span>
+                        <span class="icon btn btn-outline-dark mode_dark" onclick="setDarkMode(true)"><i class='bx bxs-moon'></i></span>
+                    </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item" style="display: none;"><a href="#home_nav" class="nav__link link"><i class='bx bx-info-circle'></i>About</a>
+                        </li>
+                        <li class="nav__item"><a href="#about" class="nav__link link">About</a>
+                        </li>
+                        <!-- <li class="nav__item"><a href="#education" class="nav__link link">Education</a></li> -->
+                        <li class="nav__item"><a href="#skill" class="nav__link link">Skills</a>
+                        </li>
+                        <li class="nav__item"><a href="#karya" class="nav__link link">Portfolio</a>
+                        </li>
+                        <li class="nav__item"><a href="#experience" class="nav__link link">Experience</a>
+                        </li>
+                        <li class="nav__item"><a href="#achievement" class="nav__link link">Achievement</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+        <section class="home h_h" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, My name is</span>
+                    <h1 class="home__name">Joki Andrianto</h1>
+                    <span class="home__profession"><span class="efek-ngetik"></span></span>
+                    <a style="border-radius: 30px !important;" href="#contact" class="button btn btn_me">Send
+                        Message
+                    </a>
+                    <!-- <a style="border-radius: 30px !important;" href="img/CV Joki Andrianto - 2022.pdf" target="_blank" class="button btn btn_me ml-3"> -->
+                    <a style="border-radius: 30px !important;" href="img/CV Joki andrianto - 2025.pdf" target="_blank" class="button btn btn_me ml-3">
+                        Resume
+                    </a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/jokiandrianto/" title="Follow me on Linkedin" class="home__social-icon ">
+                        <i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.instagram.com/joky_anryanto/" title="Follow me on Instagram" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="#youtube" title="Subscribe to my youtube channel" class="home__social-icon">
+                        <i class='bx bxl-youtube'></i></a>
+                    <a href="#" title="Follow me on Twitter" class="home__social-icon"><i class='bx bxl-twitter'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!--About-->
+    <section id="about" class="about p-3">
+        <div class="container bd-card " data-aos="fade-up">
+            <div class="row justify-content-center mb-3 pt-4">
+                <div class="col">
+                    <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bx-info-circle'></i>About</b></h2>
+                    <hr>
+                    <!-- <p class="text-center">
+                        <marquee style="width: 250px; font-family: monospace;font-size: 20px;"> Hello! Welcome to my
+                            simple web
+                        </marquee>
+                    </p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        I work in the IT field and have a comprehensive understanding of business processes across various modules, including Finance,
+                        Human Resources, Procurement, Workshop, Palm Oil Plantation and Mill Operations, Sales, Inventory, Weighbridge, Contract, and Budget Management.
+                        <br>
+                        I focus on developing and improving integrated systems to support end-to-end business operations.
+                        I also enjoy exploring new technologies and continuously enhancing existing processes for better efficiency and automation.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-3 mb-2">
+                    <h4 class="bd-font" data-aos="fade-up">Basic Informations</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <ul class="font__basic">
+                        <li>Name</li>
+                        <li>Age</li>
+                        <li>Country</li>
+                        <li>City</li>
+                        <li>Telephone</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <ul class="font__basic">
+                        <li style="list-style: none;">Joki Andrianto</li>
+                        <li style="list-style: none;">20</li>
+                        <li style="list-style: none;">Indonesia</li>
+                        <li style="list-style: none;">Tangerang</li>
+                        <li style="list-style: none;">0895363xxxxxx</li>
+                    </ul>
+                </div>
+                <!-- <div class="col d-none d-lg-block">
+                    <p>For language, I can only speak one language, namely Indonesian, I am still learning in English
+                    </p>
+                </div> -->
+                <div class="col-4 col-lg-3">
+                    <img src="img/about.png" data-aos="fade-right" data-aos-duration="1500" class="gambar_h_about">
+                </div>
+            </div>
+            <!-- <div class="col-md-3"><br>
+            <img src="h_about.png" alt="">
+          </div> -->
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="youtube" id="youtube">
+        <div class="container">
+            <div class="row pt-5 mb-5">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bxl-youtube'></i>My Youtube Channel</b></h2>
+                    <div class="row btn_visit_sub">
+                        <div class="col">
+                            <a href="https://www.youtube.com/channel/UCWpMr-32QH3E3VNOGhdirLw">
+                                Visit <span> my youtube channel </span><i class='bx bx-up-arrow-circle'></i></a>
+                        </div>
+                        <div class="col">
+                            <a href="https://www.youtube.com/channel/UCWpMr-32QH3E3VNOGhdirLw?sub_confirmation=1">
+                                Subscribe <span> to my youtube </span><i class='bx bx-up-arrow-circle'></i></a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="row row_youtube" style="overflow-y: scroll;height: 350px;">
+                <!-- <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;"></div> -->
+                <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                    <figure class="figure">
+                        <div class="figure-img">
+                            <img src="img/t_crud_part1.png" class="kosong2 figure-img img-fluid">
+                            <!-- <div class="kosong figure-img img-fluid">
+                                <h4 class="text-white text_yt_t">Coming soon</h4>
+                            </div> -->
+                            <a href="https://youtu.be/MGqIg3kKogk" class="d-flex justify-content-center">
+                                <i class='bx bxs-up-arrow-circle' style="font-size: 50px;margin-top: 50px;"></i>
+                            </a>
+                        </div>
+                        <figcaption class="figure-caption text-center">
+                            <h5 class="title_yt">Learn about CRUD
+                            </h5>
+                            <a href="https://youtu.be/MGqIg3kKogk" class="btn btn_me form-control">More</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                    <figure class="figure">
+                        <iframe src="https://www.youtube.com/embed/kYviOCHY8x0" frameborder="0" allowfullscreen class="vidio_karya"></iframe>
+                        <figcaption class="figure-caption text-center">
+                            <h5 style="font-weight: bold;color: black;">
+                                Youtube UI Clone
+                            </h5>
+                            <div class="desk_karya">
+                                <p style="margin-top: -8px;">Made with HTML and CSS</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+
+
+                <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                    <figure class="figure">
+                        <iframe src="https://www.youtube.com/embed/RqlrvELd3YM" frameborder="0" allowfullscreen class="vidio_karya"></iframe>
+                        <figcaption class="figure-caption text-center">
+                            <h5 style="font-weight: bold;color: black">
+                                Whatsapp UI Clone
+                            </h5>
+                            <div class="desk_karya">
+                                <p style="margin-top: -8px;">Made with HTML and CSS</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                    <figure class="figure">
+                        <iframe src="https://www.youtube.com/embed/C9vK5tM6M54" frameborder="0" allowfullscreen class="vidio_karya"></iframe>
+                        <figcaption class="figure-caption text-center">
+                            <h5 style="font-weight: bold;color: black">
+                                Instagram UI Clone
+                            </h5>
+                            <div class="desk_karya">
+                                <p style="margin-top: -8px;">Made with HTML and CSS</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <!-- <div class="col-6 col-sm-4 col-md-4 col-lg-3">
+                    <figure class="figure">
+
+                        <div class="figure-img">
+                            <div class="kosong figure-img img-fluid">
+                                <h4 class="text-white text_yt_t">Coming soon</h4>
+                            </div>
+                            <a href="#" class="d-flex justify-content-center">
+                                <i class='bx bxs-up-arrow-circle' style="font-size: 50px;margin-top: 50px;"></i>
+                            </a>
+                        </div>
+                        <figcaption class="figure-caption text-center">
+                            <h5 class="title_yt">Youtube UI Clone</h5>
+                            <a href="#" class="btn btn_me form-control btn_produk_s">More</a>
+                        </figcaption>
+                    </figure>
+                </div> -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- hobby -->
+
+    <div class="hobi" id="hobi">
+        <div class="container">
+            <div class="row pt-5 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bx-timer'></i>My Hobbies</b></h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header">
+                                <img src="img/hobi_gitar.png" class="rounded-circle img-thumbnail" />
+                            </div>
+                            <div class="col-lg-8 col-md-7 text-center"><br>
+                                <h5><b>Playing The
+                                        Guitar</b>
+                                </h5>
+                                <p>
+                                    I learned guitar in 2016, I learned guitar through YouTube and there are
+                                    several
+                                    competitions I have
+                                    participated in such as acoustic, padus, poetry musicalization, and others,
+                                    and
+                                    until now I sometimes
+                                    play guitar in my spare time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="img/hobi_buku.png" class="rounded-circle img-thumbnail" />
+                            </div>
+                            <div class="col-lg-8 col-md-7 text-center"><br>
+                                <h5><b>Reading
+                                        Books</b></h5>
+                                <p>
+                                    In my spare time I sometimes read books. I have several books and books that
+                                    I
+                                    always read are
+                                    books
+                                    about programmers, books on motivation, books on inspirational stories.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="sr-only">Previous</span>
+                </a> -->
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class='bx bxs-right-arrow-circle' style="color: black;background-color: white;border-radius: 50%;font-size: 30px;"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <!-- akhir hobby -->
+
+    <!-- Education-->
+    <div class="education" id="education">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul"><b><i class='bx bxs-school'></i>Education</b></h2>
+                    <hr>
+                </div>
+            </div>
+
+
+
+            <style>
+                .gambar_education {
+                    width: 100% !important;
+                    border-left: 5px solid #4B6587;
+                    box-shadow: 2px 5px 7px 2px gray;
+                }
+            </style>
+
+
+            <div class="card-deck">
+                <div class="row">
+                    <div class="col col-sm-6 col-md-3 col-lg-3">
+
+                        <div class="card bd-card gambar_education" data-aos="fade-right">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    <b>Global Institute Tangerang</b>
+                                </h5>
+                                <p class="card-text text-center text-muted"><i class='bx bx-calendar'></i>2023 - 2024</p>
+                            </div>
+                            <img class="card-img-top" style="width: 200px !important;height: 150px;margin: 0 auto !important;" src="img/GLOBAL.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-3 col-lg-3">
+
+                        <div class="card bd-card gambar_education" data-aos="fade-right">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    <b>LP3I Sudirman Tangerang</b>
+                                </h5>
+                                <p class="card-text text-center text-muted"><i class='bx bx-calendar'></i>2019 - 2022</p>
+                            </div>
+                            <img class="card-img-top" style="width: 200px !important;height: 150px;margin: 0 auto !important;" src="img/lp3ipoliteknik.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-3 col-lg-3">
+
+                        <div class="card bd-card gambar_education" data-aos="fade-up">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    <b>SMAN 12 Kab.Tangerang</b>
+                                </h5>
+                                <p class="card-text text-center text-muted"><i class='bx bx-calendar'></i>2016 - 2019</p>
+                            </div>
+                            <img class="card-img-top" style="width: 200px !important;height: 150px;margin: 0 auto !important;" src="img/sman12.png" alt="Card image cap">
+                        </div>
+                    </div>
+                    <div class="col col-sm-6 col-md-3 col-lg-3">
+
+                        <div class="card bd-card gambar_education" data-aos="fade-right">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">
+                                    <b>MTS Hidayaturrohman</b>
+                                </h5>
+                                <p class="card-text text-center text-muted"><i class='bx bx-calendar'></i>2013 - 2016</p>
+                            </div>
+                            <img class="card-img-top" style="width: 200px !important;height: 150px;margin: 0 auto !important;" src="img/mtshiro.png" alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- akhir education -->
+
+
+
+    <!-- Skill -->
+    <section id="skill" class="skill">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bxs-book-alt'></i>Professional
+                            Skills</b>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="container-fluid main-skill" data-aos="fade-down">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12 font__basic text-white">
+                            <div class="row">
+                                <script>
+                                    skill_1.forEach(function(obj) {
+                                        document.write(
+                                            '<div class="col-6"><h5 class="font__skill_2 ">' + obj.nama_skill + '</h5><div class="progress mb-3" style="background-color: #F0E5CF;"><div class="progress-bar" role="progressbar" style="width: ' + obj.proses_skill + ';" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">' + obj.proses_skill + '</div></div></div>'
+                                        );
+                                    });
+                                </script>
+                                <div class="col-12">
+                                    <h5 class="font__skill_2 ">Microsoft Office (Word, Excel, Power Point, Access, Visio)</h5>
+                                    <div class="progress mb-3" style="background-color: #F0E5CF;">
+                                        <div class="progress-bar" role="progressbar" style="width: 95%;" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">95%</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 d-none d-sm-block">
+                            <img src="img/h_about.png" data-aos="flip-up" data-aos-duration="1500">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- business flow -->
+            <div class="row mb-4 pt-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul"><b><i class='bx bxs-briefcase'></i>Business Flow</b></h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+
+                <!-- Finance -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/finance.png" class="img-fluid rounded-start imgflowbisnis" style="height: 100%;width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Finance & Accounting Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Billing (AR), Invoicing (AP), Communication Slips, Payment Proposals, Cash & Bank, Assets, Recurring Transactions, CIP, Journal Entries, Chart of Accounts (COA), Cost of Goods Sold (COGS), Profit and Loss, and Balance Sheet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Procurement -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pengadaan.png" class="img-fluid rounded-start imgflowbisnis" style="height: 100%;width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Procurement & Contract Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Purchase Requests (PR), Requests for Quotation (RFQ), Purchase Orders (PO), Work Agreements (SPK), and Completion Reports (BAPP).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/budget.png" class="img-fluid rounded-start imgflowbisnis" style="height: 100%;width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Budget Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Budget Items, Average Wages, Vehicle Budgets, Service Budgets, Factory Budgets, Plantation Budgets, Asset Budgets, and General Budgets.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HR & Legal -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/sdm.png" class="img-fluid rounded-start imgflowbisnis" style="height: 100%;width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Human Resources & Legal Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of attendance and fingerprint systems, overtime, leave and permissions, business trips, payroll, bonuses, holiday allowances (THR), and legal processes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/sales.png" class="img-fluid rounded-start imgflowbisnis" style="height: 100%;width: 100%;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Sales Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Purchase Contracts, Sales Contracts, Delivery Orders, and Handover Certificates (BAST).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshop -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/traksi.png" class="img-fluid rounded-start" style="height: 100%;width: 100%;padding: 5px;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Workshop & VRA Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of job and service recording, and employee incentive calculations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plantation -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/kebun.png" class="img-fluid rounded-start" style="height: 100%;width: 100%;padding: 5px;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Oil Palm Plantation Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Daily Work Plans (RKH), Monthly Work Plans (RKB), Foreman Activity Books (BKM), Harvest Activities, Fruit Delivery Notes (SPB), Seedling Processes, Harvest Incentives, and Supervision Incentives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mill -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/pabrik.png" class="img-fluid rounded-start" style="height: 100%;width: 100%;padding: 5px;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Palm Oil Mill Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Machine Maintenance, CPO and PK Sounding, Processing, Production, and Laboratory Result Recording.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/gudang.png" class="img-fluid rounded-start" style="height: 100%;width: 100%;padding: 5px;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Inventory Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of Goods Receipt (GR), Goods Return, Goods Issue (GI), Stock Transfer, Stock Adjustment, and Average Cost Calculation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weighbridge -->
+                <div class="col-12 col-md-6 pb-6" data-aos="fade-down">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/wb.png" class="img-fluid rounded-start" style="height: 100%;width: 100%;padding: 5px;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h6 class="card-title"><b>Weighbridge Module</b></h6>
+                                    <p class="card-text">
+                                        Understanding the flow of weighing processes for purchase and sales contracts, as well as the development and operation of the weighbridge application.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- Skill Office-->
+            <!-- <div class="row mb-4 pt-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul"><b><i class='bx bxs-briefcase'></i>Microsoft Office</b></h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-down">
+                <div class="col col-sm-6 col-md-4 col-lg-4 pb-4">
+                    <div class="card skill_office_2">
+                        <img class="card-img-top" style="width: 200px !important;height: 150px;margin: 0 auto !important;" src="img/WORD.png" alt="Card image cap">
+                        <div class="card-body text-center" style="margin-top: -37px;">
+                            <p class="card-text text-muted">Microsoft Word</p>
+                            <div class="progress" style="background-color: #F0E5CF;height: 20px;">
+                                <div class="progress-bar-office" role="progressbar" style="width: 95%;" data-aos="fade-right" data-aos-offset="100" data-aos-duration="800">95%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div> -->
+        </div>
+
+    </section>
+    <br>
+
+    <!-- karya -->
+    <section id="karya">
+        <div class="karya">
+            <div class="container">
+                <div class="row pt-5 mb-5">
+                    <div class="col text-center">
+                        <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bxs-timer'></i>Portfolio</b>
+                        </h2>
+                        <hr>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="row">
+                    <div class="col">
+
+                        <ul class="nav nav-tabs mb-3 nav-fill nav_kat" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link nav_kategori active" id="pills-backend-tab" data-toggle="pill" href="#pills-backend" role="tab" aria-controls="pills-backend" aria-selected="false">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_kategori" id="pills-frontend-tab" data-toggle="pill" href="#pills-frontend" role="tab" aria-controls="pills-frontend" aria-selected="true">Frontend</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav_kategori" id="pills-desain-tab" data-toggle="pill" href="#pills-desain" role="tab" aria-controls="pills-desain" aria-selected="false">Desain</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-backend" role="tabpanel" aria-labelledby="pills-backend-tab">
+
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/wtl.jpg" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Unggul Widya Teknologi Lestari</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>January 2022</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Procurement Module</li>
+                                                    <li>Inventory Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/kls.jpg" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Kurnia Luwuk Sejati</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>January 2023</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Mill & Weighbridge Module</li>
+                                                    <li>Procurement & Inventory Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/palma.png" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Palma Prima Plantation</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>September 2023</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Mill & Weighbridge Module</li>
+                                                    <li>Procurement & Inventory Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/agriandalas.jpg" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Agriandalas</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>September 2024</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Mill & Weighbridge Module</li>
+                                                    <li>Procurement & Inventory Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/mul.jpg" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Manakarra Unggul Lestari</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>Febuary 2025</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Procurement & Inventory Module</li>
+                                                    <li>Finance Module</li>
+                                                    <li>Human Resources Module</li>
+                                                    <li>Contract & Sales Module</li>
+                                                    <li>Oil palm plantation Module</li>
+                                                    <li>Palm oil mill Module</li>
+                                                    <li>Weighbridge Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/minanga.jpg" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Perkebunan Minanga Ogan</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>Juli 2025</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Procurement Module</li>
+                                                    <li>Inventory Module</li>
+                                                    <li>Sales Module</li>
+                                                    <li>Oil palm plantation Module</li>
+                                                    <li>Palm oil mill Module</li>
+                                                    <li>Weighbridge Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-4 col-md-6 col-lg-6 pt-3 " data-aos="fade-down">
+
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <a href="#">
+                                                    <img src="img/tbl.png" class="gambar_q" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="col div_kerja">
+                                                <a href="#">
+                                                    <h6 style="font-weight: bold;">PT. Tunas Baru Lampung</h6>
+                                                </a>
+                                                <p class="text-muted"><i class='bx bx-calendar'></i>November 2025</p>
+                                                <p>Implementasi ERP Owl plantation system, Person In Charge :</p>
+                                                <ul>
+                                                    <li>Finance & Accounting Module</li>
+                                                    <li>Budget Module</li>
+                                                    <li>Sales Module</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-frontend" role="tabpanel" aria-labelledby="pills-frontend-tab">
+
+                                <style>
+
+                                </style>
+                                <div class="row" style="overflow-y: scroll;height: 350px;">
+                                    <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                                        <figure class="figure">
+                                            <iframe src="https://www.youtube.com/embed/C9vK5tM6M54" frameborder="0" allowfullscreen class="vidio_karya"></iframe>
+                                            <figcaption class="figure-caption text-center">
+                                                <h4 style="font-weight: bold;color: black">
+                                                    Instagram UI Clone
+                                                </h4>
+                                                <div class="desk_karya">
+                                                    <p style="margin-top: -8px;">Made with HTML and CSS</p>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                                        <figure class="figure">
+                                            <iframe src="https://www.youtube.com/embed/kYviOCHY8x0" frameborder="0" allowfullscreen class="vidio_karya"></iframe>
+                                            <figcaption class="figure-caption text-center">
+                                                <h4 style="font-weight: bold;color: black;">
+                                                    Youtube UI Clone
+                                                </h4>
+                                                <div class="desk_karya">
+                                                    <p style="margin-top: -8px;">Made with HTML and CSS</p>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <div class="col-sm-4 col-md-6 col-lg-4" style="text-align: center;">
+                                        <figure class="figure">
+                                            <iframe src="https://www.youtube.com/embed/RqlrvELd3YM" frameborder="0" allowfullscreen class="vidio_karya"></iframe>
+                                            <figcaption class="figure-caption text-center">
+                                                <h4 style="font-weight: bold;color: black">
+                                                    Whatsapp UI Clone
+                                                </h4>
+                                                <div class="desk_karya">
+                                                    <p style="margin-top: -8px;">Made with HTML and CSS</p>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-desain" role="tabpanel" aria-labelledby="pills-desain-tab">
+                                <!-- <h5 class="text-center">Sedang di buat dalam bentuk vidio</h5> -->
+                                <div class="row">
+                                    <div class="col-lg-12 galeri_produk">
+                                        <figure class="figure gambar_produk">
+                                            <iframe src="https://www.youtube.com/embed/YfdqlRePIPU" frameborder="0" allowfullscreen class="figure-img img-fluid gambar_besar">
+                                            </iframe>
+                                            <!--                                         <video src="vidio/desain/animasi.mp4" controls
+                                              class="figure-img img-fluid gambar_besar"></video> -->
+                                            <figcaption class="figure-caption foto_produk_container d-flex justify-content-between">
+                                                <a href="#pills-desain">
+                                                    <video src="https://www.youtube.com/embed/YfdqlRePIPU" height="60px" width="70px" class="gambar_kecil active_gambar"></video>
+                                                </a>
+                                                <a href="#pills-desain">
+                                                    <video src="vidio/frontend/ui_yt.mp4" height="60px" width="70px" class="gambar_kecil"></video>
+                                                </a>
+                                                <a href="#pills-desain">
+                                                    <video src="vidio/frontend/ui_yt.mp4" height="60px" width="70px" class="gambar_kecil"></video>
+                                                </a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir karya -->
+
+    <!-- pengalaman kerja/magang -->
+    <section class="kerja" id="experience">
+        <div class="container">
+            <div class="row pt-5 mb-5">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul" data-aos="fade-up"><b><i class='bx bx-book-reader'></i>Experience</b>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-md-6 col-lg-6 pt-3 ">
+
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="https://www.cimbniaga.co.id/id/personal/index">
+                                <img src="img/cimbniaga.jpg" class="gambar_q" alt="">
+                            </a>
+                        </div>
+                        <div class="col div_kerja">
+                            <a href="https://www.cimbniaga.co.id/id/personal/index">
+                                <h5 style="font-weight: bold;">CIMB NIAGA</h5>
+                            </a>
+                            <h6>IT Quality Assurance</h6>
+                            <p class="text-muted"><i class='bx bx-calendar'></i>January - November 2022</p>
+                            <a href="#tes" class="btn btn_me  form-control mt-3">Job description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-6 pt-3 ">
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="http://web.owl-plantation.com:8080/index.php">
+                                <img src="img/owl.jpg" class="gambar_q" alt="">
+                            </a>
+                        </div>
+                        <div class="col div_kerja">
+                            <a href="http://web.owl-plantation.com:8080/index.php">
+                                <h5 style="font-weight: bold;">Origin Wiracipta Lestari</h5>
+                            </a>
+                            <h6 style="font-size: 14px;">Staff Developer, <span class="text-muted"><i class='bx bx-calendar'></i>November 2022</span></h6>
+                            <h6 style="font-size: 14px;">Senior Developer, <span class="text-muted"><i class='bx bx-calendar'></i>Febuary 2025 - Present</span></h6>
+
+                            <a href="#tes1" class="btn btn_me  form-control mt-3">Job description</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- akhir pengalaman kerja/magang -->
+    </section>
+    <!-- akhir skill -->
+
+    <div class="overlay" id="tes">
+        <a href="#kerja" class="close btn btn_me">X Close</a>
+        <div class="text-white p-3" style="max-width: 700px;margin: 0 auto; box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);">
+            <ul style="text-align: justify;">
+                <li>Create initial test plans, developed test cases, test scripts manually</li>
+                <li>Create documentation for software testing</li>
+                <li>Finding bugs or defects in project development</li>
+                <li>Verified ATM transactions using ascend</li>
+                <li>Testing ATM using physical and simulator</li>
+                <li>Testing Project development for user acceptance test</li>
+                <li>Invoived in SIT testing, UAT testing</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- <div class="overlay" id="tes1"> 
+        <a href="#kerja" class="close btn btn_me">X Close</a> 
+        <div class="text-white p-3" style="max-width: 700px;margin: 0 auto; box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);">
+            <ul style="text-align: justify;">
+               <li>...</li>
+            </ul>
+        </div>
+    </div>  -->
+
+    <br>
+
+    <!--Achievement-->
+    <section class="achievement" id="achievement">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul"><b><i class='bx bx-book-reader'></i>Achievement</b></h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="card card_sertifikat" style="border-radius: unset !important;border: unset !important;">
+                    <div class="card-header" style="background-color: #4B6587">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a href="#data1" class="btn nav-link achievement_tab active" role="tab" data-toggle="tab"><b>Part 1</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#data2" class="btn nav-link achievement_tab" role="tab" data-toggle="tab"><b>Part 2</b></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#data3" class="btn nav-link achievement_tab" role="tab" data-toggle="tab"><b>Part 3</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#data4" class="btn nav-link achievement_tab" role="tab" data-toggle="tab"><b>Part 4</b></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-content text-center">
+                        <div role="tabpanel" class="tab-pane active" id="data1" data-aos="fade-right" style="overflow-y: scroll;height: 420px;">
+                            <div class="container">
+
+                                <div class="row">
+                                    <script>
+                                        sertifikat_1.forEach(function(obj) {
+                                            document.write(
+                                                '<div class="col-sm-6 pt-3"><div class="card"><div class="card-body"><h5 class="card-title bd-font judul_sertifikat">' + obj.judul + '</h5> <p class="card-text text-muted">' + obj.perusahaan + '</p> <div class="row text-center text-muted"><div class="col-12 pb-2">' + obj.kategori + '</div></div> <a href="#' + obj.url_id + '" class="btn btn_me btnass form-control"> ' + obj.button + '</a> <div class="overlay" id="' + obj.url_id + '"> <a href="#achievement" class="close btn btn_me btnass ">X Close</a> <img src="' + obj.url_image + '"> </div> </div></div></div>'
+                                            );
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="data2" data-aos="fade-right" style="overflow-y: scroll;height: 420px;">
+                            <div class="container">
+
+                                <div class="row">
+                                    <script>
+                                        sertifikat_2.forEach(function(obj) {
+                                            document.write(
+                                                '<div class="col-sm-6 pt-3"><div class="card"><div class="card-body"><h5 class="card-title bd-font judul_sertifikat">' + obj.judul + '</h5> <p class="card-text text-muted">' + obj.perusahaan + '</p><div class="row text-center text-muted"><div class="col-12 pb-2">' + obj.kategori + '</div></div> <a href="#' + obj.url_id + '" class="btn btn_me btnass  form-control"> ' + obj.button + '</a> <div class="overlay" id="' + obj.url_id + '"> <a href="#achievement" class="close btn btn_me btnass ">X Close</a> <img src="' + obj.url_image + '"> </div> </div></div></div>'
+                                            );
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="data3" data-aos="fade-right" style="overflow-y: scroll;height: 420px;">
+                            <div class="container">
+
+                                <div class="row">
+                                    <script>
+                                        sertifikat_3.forEach(function(obj) {
+                                            document.write(
+                                                '<div class="col-sm-6 pt-3"><div class="card"><div class="card-body"><h5 class="card-title bd-font judul_sertifikat">' + obj.judul + '</h5> <p class="card-text text-muted">' + obj.perusahaan + '</p><div class="row text-center text-muted"><div class="col-12 pb-2">' + obj.kategori + '</div></div> <a href="#' + obj.url_id + '" class="btn btn_me btnass  form-control"> ' + obj.button + '</a> <div class="overlay" id="' + obj.url_id + '"> <a href="#achievement" class="close btn btn_me btnass ">X Close</a> <img src="' + obj.url_image + '"> </div> </div></div></div>'
+                                            );
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="data4" data-aos="fade-right" style="overflow-y: scroll;height: 420px;">
+                            <div class="container">
+
+                                <div class="row">
+                                    <script>
+                                        sertifikat_4.forEach(function(obj) {
+                                            document.write(
+                                                '<div class="col-sm-6 pt-3"><div class="card"><div class="card-body"><h5 class="card-title bd-font judul_sertifikat">' + obj.judul + '</h5> <p class="card-text text-muted">' + obj.perusahaan + '</p><div class="row text-center text-muted"><div class="col-12 pb-2">' + obj.kategori + '</div></div> <a href="#' + obj.url_id + '" class="btn btn_me btnass  form-control"> ' + obj.button + '</a> <div class="overlay" id="' + obj.url_id + '"> <a href="#achievement" class="close btn btn_me btnass ">X Close</a> <img src="' + obj.url_image + '"> </div> </div></div></div>'
+                                            );
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+    </section>
+    <!-- akhir Achievement -->
+
+
+    <!--Contact-->
+    <section class="contact">
+        <div class="container">
+            <div class="row pt-4 mb-4">
+                <div class="col text-center">
+                    <h2 class="bd-font sub_judul"><b><i class='bx bxs-contact'></i>Contact</b></h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="card-body text-center" id="contact">
+                        <h5 class="card-title text-center bd-font" style="font-size: 30px;">Contact Me</h5>
+                        <a href="#" title="Contact me by Phone" class="home__social-icon"><i class='bx bxs-phone-call'></i></a>
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="https:api.whatsapp.com/send?phone=62895363044163" title="Contact me by Whatsapp" class="home__social-icon "><i class='bx bxl-whatsapp'></i></a>
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="#" title="Contact me by Gmail" class="home__social-icon"><i class='bx bx-mail-send'></i></a>
+                    </div>
+                </div><br>
+
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                        <strong>Thank you <i class='bx bx-wink-smile'></i>,</strong> your message has been
+                        received.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="alert alert-primary my-alertt" role="alert">
+                        <b> Please send message about
+                            this
+                            website <i class='bx bx-wink-smile'></i></b>
+                    </div>
+                    <form name="resume-joky-contact-form">
+                        <div class="form-group">
+                            <label for="nama" class="bd-font"><b>Name</b></label>
+                            <input type="text" pattern="[a-z]*" name="nama" class="form-control" id="nama" placeholder="Enter your name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="bd-font"><b>Email</b></label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telp" class="bd-font"><b>Telephone</b></label>
+                            <input type="tel" name="telepon" class="form-control" id="telp" placeholder="Enter your phone number..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan" class="bd-font"><b>Message</b></label>
+                            <textarea name="pesan" required id="pesan" class="form-control"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn_me btn-kirim form-control">
+                                        Send
+                                    </button>
+
+                                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        Loading...
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <button type="reset" class="btn btn-warning form-control">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section><br>
+
+
+    <!-- Footer-->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#4B6587" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,234.7C320,224,400,192,480,176C560,160,640,160,720,181.3C800,203,880,245,960,229.3C1040,213,1120,139,1200,133.3C1280,128,1360,192,1400,224L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+        </path>
+    </svg>
+    <footer class="footer">
+        <div class="container text-center pt-8">
+            <a href="https://www.linkedin.com/in/jokiandrianto/" title="Follow me on Linkedin" class="home__social-icon-footer"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="https://www.instagram.com/joky_anryanto/" title="Follow me on Instagram" class="home__social-icon-footer"><i class='bx bxl-instagram'></i></a>
+            <a href="#" title="Follow me on Twitter" class="home__social-icon-footer"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.youtube.com/channel/UCWpMr-32QH3E3VNOGhdirLw" title="Subscribe to my youtube channel" class="home__social-icon-footer"><i class='bx bxl-youtube'></i></a>
+
+            <div class="text-center" style="color: white;font-weight: 600;">
+                <p>Copyright &copy; 2022 - Joki Andrianto. All Rights Reserved</p>
+            </div>
+    </footer>
+    <!-- scroll ke atas -->
+    <a href="#" class="up-icon"><i class='bx bxs-chevron-up-circle'></i></a>
+    <!-- akhir scroll ke atas -->
+
+
+    <!-- MAIN JS-->
+    <script src="js/main.js"></script>
+    <!-- boxicons -->
+    <script src="js/boxicons/boxicons.js"></script>
+
+    <!--AOS-->
+    <script src="js/dataaos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!--  -->
+    <!-- <script type="text/javascript" src="js/ngetik.js"></script> -->
+    <script>
+        const txtElement = ['Welcome to my portfolio'];
+        let count = 0;
+        let txtIndex = 0;
+        let currentTxt = '';
+        let words = '';
+
+        (function ngetik() {
+
+            if (count == txtElement.length) {
+                count = 0;
+            }
+
+            currentTxt = txtElement[count];
+
+            words = currentTxt.slice(0, ++txtIndex);
+            document.querySelector('.efek-ngetik').textContent = words;
+
+            if (words.length == currentTxt.length) {
+                count++;
+                txtIndex = 0;
+            }
+
+            setTimeout(ngetik, 100);
+
+        })();
+    </script>
+
+
+    <!-- pilih gambar / desain -->
+    <script>
+        const gambar_produk = document.querySelector('.gambar_produk');
+        const gambar_besar = document.querySelector('.gambar_besar');
+        const gambar_kecil = document.querySelectorAll('.gambar_kecil');
+
+        gambar_produk.addEventListener('click', function(e) {
+            // cek apakah yang diklik adalah gambar_kecil
+            if (e.target.className == 'gambar_kecil') {
+                gambar_besar.src = e.target.src;
+                gambar_besar.classList.add('fade');
+                setTimeout(function() {
+                    gambar_besar.classList.remove('fade');
+                }, 500);
+
+                gambar_kecil.forEach(function(gambar_kecil2) {
+                    if (gambar_kecil2.classList.contains('active_gambar')) {
+                        gambar_kecil2.classList.remove('active_gambar');
+                    }
+
+                });
+
+                e.target.classList.add('active_gambar');
+            };
+        });
+    </script>
+    <!-- akhir pilih gambar / desain -->
+
+
+    <!-- Contact form -->
+    <!-- yang tidak dikasih komentar itu dari copas github.com/jamiewilson/form-to-google-sheets -->
+    <!-- yang dikasih komentar itu dari wpu/shandika -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTJ78WB2gx04JSk9BHzwKnbRw6cSIEW9-mlG2788V2gE6V1MKOeF-IuwiDxmtG73Y1Fg/exec'
+        const form = document.forms['resume-joky-contact-form']
+        // variabel namanya btnkirim , jquey tolong cariin ada ga yang kelas namanya .btn-kirim
+        const btnKirim = document.querySelector('.btn-kirim');
+        // variabel namanya btnloading , jquey tolong cariin ada ga yang kelas namanya .btn-loading
+        const btnLoading = document.querySelector('.btn-loading');
+        // 
+        const myAlert = document.querySelector('.my-alert');
+        const myAlertt = document.querySelector('.my-alertt');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // ketika tombol submit diklik
+            // tampilkan tombol loading ,hilangkan tombol kirimpesan
+            // javascript carikan saya btnloading liat didalam classlist nya ada ga kelas namanya d-none , kalau ada hilangkan
+            btnLoading.classList.toggle('d-none');
+            // javascript carikan saya btnkirim liat didalam classlist nya ada ga kelas namanya d-none , kalau ga ada tambahkan
+            btnKirim.classList.toggle('d-none');
+
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    // tampilkan tombol loading ,hilangkan tombol kirimpesan
+                    // javascript carikan saya btnloading liat didalam classlist nya ada ga kelas namanya d-none , kalau ada hilangkan
+                    btnLoading.classList.toggle('d-none');
+                    // javascript carikan saya btnkirim liat didalam classlist nya ada ga kelas namanya d-none , kalau ga ada tambahkan
+                    btnKirim.classList.toggle('d-none');
+                    // tampilkan alert
+                    // sebelumnya di class my-alert ada d-none
+                    // kalau berhasil hilangkan kelas d-none
+                    myAlert.classList.toggle('d-none');
+                    // 
+                    myAlertt.classList.toggle('d-none');
+                    // reset formnya / hilangkan isi pesan yang di ampilan web
+                    form.reset();
+
+                    console.log('Success!', response)
+
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <!-- Akhir contact form -->
+
+    <!-- pesan copyright ketik ctr-u,shift i -->
+    <script>
+        $(document).bind("contextmenu", function(e) {
+            alert('Copyright © 2022 - Joki Andrianto.') //silahkan tulis pesan yang akan ditampilkan
+        });
+    </script>
+
+    <script>
+        document.onkeydown = function(e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                alert('Copyright © 2022 - Joki Andrianto.')
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                alert('Copyright © 2022 - Joki Andrianto.')
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                alert('Copyright © 2022 - Joki Andrianto.')
+                return false;
+            }
+        }
+    </script>
+    <!-- akhir copyright -->
+    <script>
+        function setDarkMode(isDark) {
+            if (isDark) {
+                document.body.setAttribute('id', 'darkmode')
+            } else {
+                document.body.setAttribute('id', '')
+            }
+        }
+    </script>
+    <!-- akhir dark mode -->
+
+    <!-- auto active nav -->
+    <script>
+        const li = document.querySelectorAll(".link");
+        const sec = document.querySelectorAll("section");
+
+        function activeMenu() {
+            let len = sec.length;
+            while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
+            li.forEach(ltx => ltx.classList.remove("active_nav"));
+            li[len].classList.add("active_nav");
+
+        }
+
+        activeMenu();
+        window.addEventListener("scroll", activeMenu);
+    </script>
+    <!-- akhir auto active nav -->
+
+
+
 </body>
+
 </html>
